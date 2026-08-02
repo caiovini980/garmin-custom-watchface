@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="C:\dev\custom-watchface\manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="1" lineNum="5" parent="globals/custom_watchfaceApp" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="2" lineNum="31" parent="globals" pc="268435472" symbol="getApp"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="2" lineNum="32" parent="globals" pc="268435482" symbol="getApp"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="3" lineNum="6" parent="globals/Background" pc="268435493" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="4" lineNum="12" parent="globals/custom_watchfaceView" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="4" lineNum="19" parent="globals/custom_watchfaceView" pc="268435516" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="4" lineNum="20" parent="globals/custom_watchfaceView" pc="268435541" symbol="&lt;init&gt;"/>
+        <entry filename="c:\\dev\\custom-watchface\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435566" symbol="&lt;init&gt;"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="6" lineNum="12" parent="globals/custom_watchfaceApp" pc="268435586" symbol="onStart"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="7" lineNum="25" parent="globals/custom_watchfaceApp" pc="268435589" symbol="onSettingsChanged"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="7" lineNum="26" parent="globals/custom_watchfaceApp" pc="268435591" symbol="onSettingsChanged"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="8" lineNum="20" parent="globals/custom_watchfaceApp" pc="268435603" symbol="getInitialView"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="8" lineNum="21" parent="globals/custom_watchfaceApp" pc="268435605" symbol="getInitialView"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="9" lineNum="7" parent="globals/custom_watchfaceApp" pc="268435631" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="9" lineNum="8" parent="globals/custom_watchfaceApp" pc="268435633" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceApp.mc" id="10" lineNum="16" parent="globals/custom_watchfaceApp" pc="268435646" symbol="onStop"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="11" lineNum="8" parent="globals/Background" pc="268435649" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="11" lineNum="9" parent="globals/Background" pc="268435652" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="11" lineNum="13" parent="globals/Background" pc="268435670" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="12" lineNum="16" parent="globals/Background" pc="268435687" symbol="draw"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="12" lineNum="18" parent="globals/Background" pc="268435689" symbol="draw"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceBackground.mc" id="12" lineNum="19" parent="globals/Background" pc="268435720" symbol="draw"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="13" lineNum="58" parent="globals/custom_watchfaceView" pc="268435729" symbol="onExitSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="13" lineNum="59" parent="globals/custom_watchfaceView" pc="268435731" symbol="onExitSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="13" lineNum="60" parent="globals/custom_watchfaceView" pc="268435760" symbol="onExitSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="14" lineNum="174" parent="globals/custom_watchfaceView" pc="268435792" symbol="drawHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="14" lineNum="175" parent="globals/custom_watchfaceView" pc="268435795" symbol="drawHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="14" lineNum="176" parent="globals/custom_watchfaceView" pc="268435809" symbol="drawHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="14" lineNum="177" parent="globals/custom_watchfaceView" pc="268435821" symbol="drawHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="14" lineNum="178" parent="globals/custom_watchfaceView" pc="268435843" symbol="drawHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="14" lineNum="180" parent="globals/custom_watchfaceView" pc="268435865" symbol="drawHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="16" lineNum="26" parent="globals/custom_watchfaceView" pc="268435884" symbol="onLayout"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="16" lineNum="27" parent="globals/custom_watchfaceView" pc="268435886" symbol="onLayout"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="16" lineNum="28" parent="globals/custom_watchfaceView" pc="268435924" symbol="onLayout"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="16" lineNum="30" parent="globals/custom_watchfaceView" pc="268435962" symbol="onLayout"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="98" parent="globals/custom_watchfaceView" pc="268436001" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="99" parent="globals/custom_watchfaceView" pc="268436004" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="101" parent="globals/custom_watchfaceView" pc="268436021" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="102" parent="globals/custom_watchfaceView" pc="268436032" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="103" parent="globals/custom_watchfaceView" pc="268436051" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="104" parent="globals/custom_watchfaceView" pc="268436073" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="105" parent="globals/custom_watchfaceView" pc="268436095" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="107" parent="globals/custom_watchfaceView" pc="268436098" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="108" parent="globals/custom_watchfaceView" pc="268436108" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="109" parent="globals/custom_watchfaceView" pc="268436112" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="112" parent="globals/custom_watchfaceView" pc="268436127" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="113" parent="globals/custom_watchfaceView" pc="268436131" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="116" parent="globals/custom_watchfaceView" pc="268436143" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="117" parent="globals/custom_watchfaceView" pc="268436150" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="118" parent="globals/custom_watchfaceView" pc="268436172" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="17" lineNum="119" parent="globals/custom_watchfaceView" pc="268436194" symbol="drawHourTicks"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="183" parent="globals/custom_watchfaceView" pc="268436223" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="184" parent="globals/custom_watchfaceView" pc="268436226" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="185" parent="globals/custom_watchfaceView" pc="268436240" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="186" parent="globals/custom_watchfaceView" pc="268436252" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="187" parent="globals/custom_watchfaceView" pc="268436259" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="188" parent="globals/custom_watchfaceView" pc="268436266" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="189" parent="globals/custom_watchfaceView" pc="268436291" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="18" lineNum="190" parent="globals/custom_watchfaceView" pc="268436316" symbol="drawHandShadowOffset"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="141" parent="globals/custom_watchfaceView" pc="268436335" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="142" parent="globals/custom_watchfaceView" pc="268436338" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="143" parent="globals/custom_watchfaceView" pc="268436350" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="144" parent="globals/custom_watchfaceView" pc="268436361" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="145" parent="globals/custom_watchfaceView" pc="268436369" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="147" parent="globals/custom_watchfaceView" pc="268436377" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="148" parent="globals/custom_watchfaceView" pc="268436396" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="150" parent="globals/custom_watchfaceView" pc="268436428" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="151" parent="globals/custom_watchfaceView" pc="268436456" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="153" parent="globals/custom_watchfaceView" pc="268436488" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="154" parent="globals/custom_watchfaceView" pc="268436507" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="155" parent="globals/custom_watchfaceView" pc="268436517" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="157" parent="globals/custom_watchfaceView" pc="268436521" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="159" parent="globals/custom_watchfaceView" pc="268436547" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="19" lineNum="160" parent="globals/custom_watchfaceView" pc="268436564" symbol="drawHands"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="20" lineNum="70" parent="globals/custom_watchfaceView" pc="268436581" symbol="onTimerTick"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="20" lineNum="71" parent="globals/custom_watchfaceView" pc="268436583" symbol="onTimerTick"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="21" lineNum="63" parent="globals/custom_watchfaceView" pc="268436595" symbol="onEnterSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="21" lineNum="64" parent="globals/custom_watchfaceView" pc="268436597" symbol="onEnterSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="21" lineNum="65" parent="globals/custom_watchfaceView" pc="268436606" symbol="onEnterSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="21" lineNum="66" parent="globals/custom_watchfaceView" pc="268436618" symbol="onEnterSleep"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="193" parent="globals/custom_watchfaceView" pc="268436630" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="194" parent="globals/custom_watchfaceView" pc="268436633" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="195" parent="globals/custom_watchfaceView" pc="268436645" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="197" parent="globals/custom_watchfaceView" pc="268436653" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="198" parent="globals/custom_watchfaceView" pc="268436657" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="199" parent="globals/custom_watchfaceView" pc="268436661" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="200" parent="globals/custom_watchfaceView" pc="268436665" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="202" parent="globals/custom_watchfaceView" pc="268436669" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="203" parent="globals/custom_watchfaceView" pc="268436679" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="205" parent="globals/custom_watchfaceView" pc="268436692" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="206" parent="globals/custom_watchfaceView" pc="268436709" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="209" parent="globals/custom_watchfaceView" pc="268436721" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="212" parent="globals/custom_watchfaceView" pc="268436741" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="213" parent="globals/custom_watchfaceView" pc="268436751" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="216" parent="globals/custom_watchfaceView" pc="268436772" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="217" parent="globals/custom_watchfaceView" pc="268436776" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="218" parent="globals/custom_watchfaceView" pc="268436786" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="219" parent="globals/custom_watchfaceView" pc="268436805" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="221" parent="globals/custom_watchfaceView" pc="268436818" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="222" parent="globals/custom_watchfaceView" pc="268436838" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="225" parent="globals/custom_watchfaceView" pc="268436865" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="226" parent="globals/custom_watchfaceView" pc="268436882" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="227" parent="globals/custom_watchfaceView" pc="268436903" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="22" lineNum="228" parent="globals/custom_watchfaceView" pc="268436913" symbol="drawBattery"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="23" lineNum="22" parent="globals/custom_watchfaceView" pc="268436933" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="23" lineNum="23" parent="globals/custom_watchfaceView" pc="268436935" symbol="initialize"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="36" parent="globals/custom_watchfaceView" pc="268436948" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="38" parent="globals/custom_watchfaceView" pc="268436951" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="39" parent="globals/custom_watchfaceView" pc="268436971" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="41" parent="globals/custom_watchfaceView" pc="268436979" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="42" parent="globals/custom_watchfaceView" pc="268436988" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="43" parent="globals/custom_watchfaceView" pc="268436997" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="44" parent="globals/custom_watchfaceView" pc="268437004" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="45" parent="globals/custom_watchfaceView" pc="268437011" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="48" parent="globals/custom_watchfaceView" pc="268437021" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="50" parent="globals/custom_watchfaceView" pc="268437038" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="51" parent="globals/custom_watchfaceView" pc="268437055" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="25" lineNum="52" parent="globals/custom_watchfaceView" pc="268437072" symbol="onUpdate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="75" parent="globals/custom_watchfaceView" pc="268437090" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="76" parent="globals/custom_watchfaceView" pc="268437093" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="77" parent="globals/custom_watchfaceView" pc="268437105" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="78" parent="globals/custom_watchfaceView" pc="268437123" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="79" parent="globals/custom_watchfaceView" pc="268437173" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="81" parent="globals/custom_watchfaceView" pc="268437182" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="82" parent="globals/custom_watchfaceView" pc="268437199" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="26" lineNum="83" parent="globals/custom_watchfaceView" pc="268437212" symbol="drawDate"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="163" parent="globals/custom_watchfaceView" pc="268437232" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="164" parent="globals/custom_watchfaceView" pc="268437235" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="165" parent="globals/custom_watchfaceView" pc="268437249" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="166" parent="globals/custom_watchfaceView" pc="268437261" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="167" parent="globals/custom_watchfaceView" pc="268437287" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="168" parent="globals/custom_watchfaceView" pc="268437313" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="169" parent="globals/custom_watchfaceView" pc="268437335" symbol="drawSecondsHand"/>
+        <entry filename="C:\\dev\\custom-watchface\\source\\custom-watchfaceView.mc" id="27" lineNum="171" parent="globals/custom_watchfaceView" pc="268437357" symbol="drawSecondsHand"/>
+        <entry filename="c:\\dev\\custom-watchface\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="28" lineNum="19" parent="globals/Rez/Layouts" pc="268437376" symbol="WatchFace"/>
+        <entry filename="c:\\dev\\custom-watchface\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="28" lineNum="20" parent="globals/Rez/Layouts" pc="268437387" symbol="WatchFace"/>
+        <entry filename="c:\\dev\\custom-watchface\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="28" lineNum="22" parent="globals/Rez/Layouts" pc="268437411" symbol="WatchFace"/>
+        <entry filename="c:\\dev\\custom-watchface\\bin\\gen\\006-B4433-00\\source\\Rez.mcgen" id="28" lineNum="24" parent="globals/Rez/Layouts" pc="268437527" symbol="WatchFace"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="12" method="true" symbol="drawDate"/>
+        <entry id="19" method="true" symbol="onTimerTick"/>
+        <entry id="8389683" method="true" symbol="onSettingsChanged"/>
+        <entry field="true" id="33" symbol="ColorRed"/>
+        <entry field="true" id="10" symbol="cascadiaFont"/>
+        <entry field="true" id="36" symbol="MilitaryFormatTitle"/>
+        <entry id="8388924" module="true" symbol="Gregorian"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry field="true" id="30" symbol="ColorBlue"/>
+        <entry id="14" method="true" symbol="drawHandShadowOffset"/>
+        <entry field="true" id="27" symbol="AppName"/>
+        <entry id="6" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry field="true" id="26" symbol="FiraCodeFont"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="7" object="true" symbol="custom_watchfaceApp"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8389375" method="true" object="true" symbol="WatchFace"/>
+        <entry field="true" id="8389065" symbol="locY"/>
+        <entry field="true" id="8389064" symbol="locX"/>
+        <entry field="true" id="9" symbol="backgroundImage"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389348" symbol="font"/>
+        <entry id="8389275" method="true" symbol="getApp"/>
+        <entry field="true" id="31" symbol="ColorDarkGray"/>
+        <entry id="5" module="true" symbol="globals/Rez/Layouts"/>
+        <entry id="11" method="true" symbol="drawBattery"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry id="8389376" method="true" symbol="onEnterSleep"/>
+        <entry field="true" id="8389063" symbol="identifier"/>
+        <entry id="8389349" symbol="justification"/>
+        <entry field="true" id="34" symbol="ColorWhite"/>
+        <entry field="true" id="18" symbol="firaCodeFont"/>
+        <entry field="true" id="29" symbol="ColorBlack"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389377" method="true" symbol="onExitSleep"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry id="13" method="true" symbol="drawHand"/>
+        <entry id="8389068" method="true" symbol="draw"/>
+        <entry field="true" id="24" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389123" method="true" symbol="onShow"/>
+        <entry field="true" id="21" symbol="updateTimer"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry field="true" id="28" symbol="BackgroundColorTitle"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8390146" module="true" object="true" symbol="Background"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="20" symbol="shadowColor"/>
+        <entry id="8388641" module="true" symbol="Math"/>
+        <entry field="true" id="23" symbol="BackgroundImage"/>
+        <entry field="true" id="32" symbol="ColorLightGray"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="8389347" symbol="color"/>
+        <entry field="true" id="35" symbol="ForegroundColorTitle"/>
+        <entry id="16" method="true" symbol="drawHourTicks"/>
+        <entry id="8388646" module="true" object="true" symbol="Timer"/>
+        <entry id="15" method="true" symbol="drawHands"/>
+        <entry id="22" module="true" symbol="Layouts"/>
+        <entry id="17" method="true" symbol="drawSecondsHand"/>
+        <entry id="4" module="true" symbol="globals/Rez/Fonts"/>
+        <entry field="true" id="8389743" symbol="backgroundColor"/>
+        <entry id="8" object="true" symbol="custom_watchfaceView"/>
+        <entry id="8389125" method="true" symbol="onHide"/>
+        <entry field="true" id="25" symbol="CascadiaFont"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry endPc="268435685" name="dictionary" stackId="1" startPc="268435652"/>
+        <entry arg="true" endPc="268435728" name="dc" stackId="1" startPc="268435687"/>
+        <entry arg="true" endPc="268435883" name="dc" stackId="1" startPc="268435792"/>
+        <entry arg="true" endPc="268435883" name="centerX" stackId="2" startPc="268435792"/>
+        <entry arg="true" endPc="268435883" name="centerY" stackId="3" startPc="268435792"/>
+        <entry arg="true" endPc="268435883" name="angle" stackId="4" startPc="268435792"/>
+        <entry arg="true" endPc="268435883" name="length" stackId="5" startPc="268435792"/>
+        <entry arg="true" endPc="268435883" name="penWidth" stackId="6" startPc="268435792"/>
+        <entry arg="true" endPc="268435883" name="color" stackId="7" startPc="268435792"/>
+        <entry endPc="268435882" name="endX" stackId="8" startPc="268435795"/>
+        <entry endPc="268435882" name="endY" stackId="9" startPc="268435795"/>
+        <entry arg="true" endPc="268436000" name="dc" stackId="1" startPc="268435884"/>
+        <entry arg="true" endPc="268436222" name="dc" stackId="1" startPc="268436001"/>
+        <entry arg="true" endPc="268436222" name="centerX" stackId="2" startPc="268436001"/>
+        <entry arg="true" endPc="268436222" name="centerY" stackId="3" startPc="268436001"/>
+        <entry arg="true" endPc="268436222" name="radius" stackId="4" startPc="268436001"/>
+        <entry endPc="268436221" name="i" stackId="5" startPc="268436032"/>
+        <entry endPc="268436211" name="angle" stackId="6" startPc="268436032"/>
+        <entry endPc="268436211" name="outerX" stackId="7" startPc="268436032"/>
+        <entry endPc="268436211" name="outerY" stackId="8" startPc="268436032"/>
+        <entry endPc="268436211" name="tickLength" stackId="9" startPc="268436032"/>
+        <entry endPc="268436211" name="innerRadius" stackId="10" startPc="268436032"/>
+        <entry endPc="268436211" name="innerX" stackId="11" startPc="268436032"/>
+        <entry endPc="268436211" name="innerY" stackId="12" startPc="268436032"/>
+        <entry arg="true" endPc="268436334" name="dc" stackId="1" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="centerX" stackId="2" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="centerY" stackId="3" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="angle" stackId="4" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="length" stackId="5" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="penWidth" stackId="6" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="color" stackId="7" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="offsetX" stackId="8" startPc="268436223"/>
+        <entry arg="true" endPc="268436334" name="offsetY" stackId="9" startPc="268436223"/>
+        <entry endPc="268436333" name="startX" stackId="10" startPc="268436226"/>
+        <entry endPc="268436333" name="startY" stackId="11" startPc="268436226"/>
+        <entry endPc="268436333" name="endX" stackId="12" startPc="268436226"/>
+        <entry endPc="268436333" name="endY" stackId="13" startPc="268436226"/>
+        <entry arg="true" endPc="268436580" name="dc" stackId="1" startPc="268436335"/>
+        <entry arg="true" endPc="268436580" name="centerX" stackId="2" startPc="268436335"/>
+        <entry arg="true" endPc="268436580" name="centerY" stackId="3" startPc="268436335"/>
+        <entry arg="true" endPc="268436580" name="radius" stackId="4" startPc="268436335"/>
+        <entry endPc="268436579" name="clockTime" stackId="5" startPc="268436338"/>
+        <entry endPc="268436579" name="hour" stackId="6" startPc="268436338"/>
+        <entry endPc="268436579" name="minute" stackId="7" startPc="268436338"/>
+        <entry endPc="268436579" name="second" stackId="8" startPc="268436338"/>
+        <entry endPc="268436579" name="minuteAngle" stackId="9" startPc="268436338"/>
+        <entry endPc="268436579" name="hourAngle" stackId="10" startPc="268436338"/>
+        <entry endPc="268436579" name="secondHandAngle" stackId="11" startPc="268436338"/>
+        <entry endPc="268436579" name="secondHandLength" stackId="12" startPc="268436338"/>
+        <entry endPc="268436579" name="secondHandThickness" stackId="13" startPc="268436338"/>
+        <entry arg="true" endPc="268436932" name="dc" stackId="1" startPc="268436630"/>
+        <entry arg="true" endPc="268436932" name="centerX" stackId="2" startPc="268436630"/>
+        <entry arg="true" endPc="268436932" name="centerY" stackId="3" startPc="268436630"/>
+        <entry arg="true" endPc="268436932" name="radius" stackId="4" startPc="268436630"/>
+        <entry endPc="268436931" name="stats" stackId="5" startPc="268436633"/>
+        <entry endPc="268436931" name="batteryPercent" stackId="6" startPc="268436633"/>
+        <entry endPc="268436931" name="iconWidth" stackId="7" startPc="268436633"/>
+        <entry endPc="268436931" name="iconHeight" stackId="8" startPc="268436633"/>
+        <entry endPc="268436931" name="nubWidth" stackId="9" startPc="268436633"/>
+        <entry endPc="268436931" name="nubHeight" stackId="10" startPc="268436633"/>
+        <entry endPc="268436931" name="iconX" stackId="11" startPc="268436633"/>
+        <entry endPc="268436931" name="iconY" stackId="12" startPc="268436633"/>
+        <entry endPc="268436931" name="nubX" stackId="13" startPc="268436633"/>
+        <entry endPc="268436931" name="fillPadding" stackId="14" startPc="268436633"/>
+        <entry endPc="268436931" name="maxFillHeight" stackId="15" startPc="268436633"/>
+        <entry endPc="268436931" name="fillHeight" stackId="16" startPc="268436633"/>
+        <entry endPc="268436931" name="fillY" stackId="17" startPc="268436633"/>
+        <entry endPc="268436931" name="percentText" stackId="18" startPc="268436633"/>
+        <entry endPc="268436931" name="textY" stackId="19" startPc="268436633"/>
+        <entry arg="true" endPc="268437089" name="dc" stackId="1" startPc="268436948"/>
+        <entry endPc="268437088" name="width" stackId="2" startPc="268436951"/>
+        <entry endPc="268437088" name="height" stackId="3" startPc="268436951"/>
+        <entry endPc="268437088" name="centerX" stackId="4" startPc="268436951"/>
+        <entry endPc="268437088" name="centerY" stackId="5" startPc="268436951"/>
+        <entry endPc="268437088" name="clockRadius" stackId="6" startPc="268436951"/>
+        <entry arg="true" endPc="268437231" name="dc" stackId="1" startPc="268437090"/>
+        <entry arg="true" endPc="268437231" name="centerX" stackId="2" startPc="268437090"/>
+        <entry arg="true" endPc="268437231" name="centerY" stackId="3" startPc="268437090"/>
+        <entry arg="true" endPc="268437231" name="radius" stackId="4" startPc="268437090"/>
+        <entry endPc="268437230" name="now" stackId="5" startPc="268437093"/>
+        <entry endPc="268437230" name="date" stackId="6" startPc="268437093"/>
+        <entry endPc="268437230" name="dateString" stackId="7" startPc="268437093"/>
+        <entry endPc="268437230" name="dateY" stackId="8" startPc="268437093"/>
+        <entry arg="true" endPc="268437375" name="dc" stackId="1" startPc="268437232"/>
+        <entry arg="true" endPc="268437375" name="centerX" stackId="2" startPc="268437232"/>
+        <entry arg="true" endPc="268437375" name="centerY" stackId="3" startPc="268437232"/>
+        <entry arg="true" endPc="268437375" name="angle" stackId="4" startPc="268437232"/>
+        <entry arg="true" endPc="268437375" name="length" stackId="5" startPc="268437232"/>
+        <entry arg="true" endPc="268437375" name="penWidth" stackId="6" startPc="268437232"/>
+        <entry arg="true" endPc="268437375" name="color" stackId="7" startPc="268437232"/>
+        <entry endPc="268437374" name="startX" stackId="8" startPc="268437235"/>
+        <entry endPc="268437374" name="startY" stackId="9" startPc="268437235"/>
+        <entry endPc="268437374" name="endX" stackId="10" startPc="268437235"/>
+        <entry endPc="268437374" name="endY" stackId="11" startPc="268437235"/>
+        <entry arg="true" endPc="268437541" name="dc" stackId="1" startPc="268437376"/>
+        <entry endPc="268437541" name="rez_cmp_local_custom_drawable_11939594661139614796" stackId="2" startPc="268437387"/>
+        <entry endPc="268437541" name="rez_cmp_local_text_TimeLabel" stackId="3" startPc="268437387"/>
+    </localVars>
+    <deviceInfo deviceVersion="3cbcff5b61d759a7585c5fa7606e74c0bd5dfa74" partNumber="006-B4433-00"/>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="MilitaryFormatTitle"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorWhite"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ForegroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorLightGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlue"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="BackgroundColorTitle"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="CascadiaFont"/>
+        <annotationEntry annotation="initialized" class="Fonts" module="globals/Rez" symbol="FiraCodeFont"/>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="BackgroundImage"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorRed"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorDarkGray"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="ColorBlack"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="67" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/custom_watchfaceApp" offset="143" parentId="globals" symbolId="custom_watchfaceApp" type="class"/>
+        <dataEntry label="globals/Background" offset="223" parentId="globals" symbolId="Background" type="class"/>
+        <dataEntry label="globals/custom_watchfaceView" offset="276" parentId="globals" symbolId="custom_watchfaceView" type="class"/>
+        <dataEntry label="globals/Rez" offset="500" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/Rez/Drawables" offset="562" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="606" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Fonts" offset="641" parentId="Rez" symbolId="Fonts" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="685" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435471" name="&lt;init&gt;" parent="custom_watchfaceApp" startPc="268435460">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435492" name="getApp" startPc="268435472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="Background" startPc="268435493">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435565" name="&lt;init&gt;" parent="custom_watchfaceView" startPc="268435505">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435585" name="&lt;init&gt;" parent="Rez" startPc="268435566">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435588" name="onStart" parent="custom_watchfaceApp" startPc="268435586">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435602" name="onSettingsChanged" parent="custom_watchfaceApp" startPc="268435589">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435630" name="getInitialView" parent="custom_watchfaceApp" startPc="268435603">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435645" name="initialize" parent="custom_watchfaceApp" startPc="268435631">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435648" name="onStop" parent="custom_watchfaceApp" startPc="268435646">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435686" name="initialize" parent="Background" startPc="268435649">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435728" name="draw" parent="Background" startPc="268435687">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435791" name="onExitSleep" parent="custom_watchfaceView" startPc="268435729">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435883" name="drawHand" parent="custom_watchfaceView" startPc="268435792">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="angle"/>
+            <param id="length"/>
+            <param id="penWidth"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="custom_watchfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436000" name="onLayout" parent="custom_watchfaceView" startPc="268435884">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436222" name="drawHourTicks" parent="custom_watchfaceView" startPc="268436001">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436334" name="drawHandShadowOffset" parent="custom_watchfaceView" startPc="268436223">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="angle"/>
+            <param id="length"/>
+            <param id="penWidth"/>
+            <param id="color"/>
+            <param id="offsetX"/>
+            <param id="offsetY"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436580" name="drawHands" parent="custom_watchfaceView" startPc="268436335">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436594" name="onTimerTick" parent="custom_watchfaceView" startPc="268436581">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436629" name="onEnterSleep" parent="custom_watchfaceView" startPc="268436595">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436932" name="drawBattery" parent="custom_watchfaceView" startPc="268436630">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436947" name="initialize" parent="custom_watchfaceView" startPc="268436933">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="custom_watchfaceView">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437089" name="onUpdate" parent="custom_watchfaceView" startPc="268436948">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437231" name="drawDate" parent="custom_watchfaceView" startPc="268437090">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437375" name="drawSecondsHand" parent="custom_watchfaceView" startPc="268437232">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="angle"/>
+            <param id="length"/>
+            <param id="penWidth"/>
+            <param id="color"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Layouts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Fonts">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268437541" name="WatchFace" parent="Layouts" startPc="268437376">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

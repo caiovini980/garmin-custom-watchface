@@ -1,0 +1,1471 @@
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Application,1,14,25]; ]
+import Toybox.Application;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [System,4,13,19]; @symbol_usingAlias = [Sys,4,23,26]; ]
+using Toybox.System as :Sys;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Timer,5,13,18]; @symbol_usingAlias = [Timer,5,22,27]; ]
+using Toybox.Timer as :Timer;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Time,6,13,17]; @symbol_usingdef<2> = [Gregorian,6,18,27]; @symbol_usingAlias = [Gregorian,6,31,40]; ]
+using Toybox.Time.Gregorian as :Gregorian;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 7; @symbol_usingdef<0> = [Toybox,7,6,12]; @symbol_usingdef<1> = [Graphics,7,13,21]; @symbol_usingAlias = [Gfx,7,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 8; @symbol_usingdef<0> = [Toybox,8,6,12]; @symbol_usingdef<1> = [Lang,8,13,17]; @symbol_usingAlias = [Language,8,21,29]; ]
+using Toybox.Lang as :Language;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 9; @symbol_usingdef<0> = [Toybox,9,6,12]; @symbol_usingdef<1> = [Math,9,13,17]; @symbol_usingAlias = [Math,9,21,25]; ]
+using Toybox.Math as :Math;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 10; @symbol_usingdef<0> = [Toybox,10,6,12]; @symbol_usingdef<1> = [System,10,13,19]; @symbol_usingAlias = [Sys,10,23,26]; ]
+using Toybox.System as :Sys;
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 12; @symbol_classdef = [custom_watchfaceView,12,6,26]; @symbol_extends<0> = [WatchUi,12,35,42]; @symbol_extends<1> = [WatchFace,12,43,52]; ]
+class custom_watchfaceView extends WatchUi.WatchFace {
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 12; ]
+    <init> {
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 19 8 ]
+        symbol [ Gfx %tmp.1 19 26 29 ];
+        %tmp.1 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.2 19 30 41 ];
+        %tmp.2 = getv function %tmp.1 :createColor;
+        %tmp.3 = 255;
+        %tmp.4 = 0;
+        %tmp.5 = 0;
+        %tmp.6 = 0;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.3, %tmp.4, %tmp.5, %tmp.6);
+        putv self :backgroundColor %tmp.7;
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 20 8 ]
+        symbol [ Gfx %tmp.8 20 22 25 ];
+        %tmp.8 = getm $.Toybox.Graphics;
+        symbol [ createColor %tmp.9 20 26 37 ];
+        %tmp.9 = getv function %tmp.8 :createColor;
+        %tmp.10 = 50;
+        %tmp.11 = 0;
+        %tmp.12 = 0;
+        %tmp.13 = 0;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.10, %tmp.11, %tmp.12, %tmp.13);
+        putv self :shadowColor %tmp.14;
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 12; ]
+    static
+    <init> {
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 14; @position = 8; @symbol_vardef = [cascadiaFont,14,8,20]; ]
+    var cascadiaFont;
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 15; @position = 8; @symbol_vardef = [firaCodeFont,15,8,20]; ]
+    var firaCodeFont;
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 16; @position = 8; @symbol_vardef = [backgroundImage,16,8,23]; ]
+    var backgroundImage;
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 17; @position = 8; @symbol_vardef = [updateTimer,17,8,19]; ]
+    var updateTimer;
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 19; @position = 8; @symbol_vardef = [backgroundColor,19,8,23]; ]
+    var backgroundColor;
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 20; @position = 8; @symbol_vardef = [shadowColor,20,8,19]; ]
+    var shadowColor;
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 22; @symbol_functiondef = [initialize,22,13,23]; ]
+    function initialize() as Void {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_22_26_24_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 23 8 ]
+        symbol [ WatchFace %tmp.2 23 8 17 ];
+        %tmp.2 = getv ? :WatchFace;
+        symbol [ initialize %tmp.3 23 18 28 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+C__dev_custom_watchface_source_custom_watchfaceView_mc_22_26_24_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 26; @symbol_functiondef = [onLayout,26,13,21]; @symbol_param<0> = [dc,26,22,24]; @symbol_param<0>_type<0> = [Gfx,26,28,31]; @symbol_param<0>_type<1> = [Dc,26,32,34]; ]
+    function onLayout(dc as Gfx.Dc) as Void {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_26_44_31_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 27 8 ]
+        symbol [ WatchUi %tmp.1 27 23 30 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.2 27 31 43 ];
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        symbol [ Rez %tmp.4 27 44 47 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Fonts %tmp.5 27 48 53 ];
+        %tmp.5 = getv %tmp.4 :Fonts;
+        symbol [ CascadiaFont %tmp.6 27 54 66 ];
+        %tmp.6 = getv %tmp.5 :CascadiaFont;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        symbol [ cascadiaFont ? 27 8 20 ];
+        putv self :cascadiaFont %tmp.7;
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 28 8 ]
+        symbol [ WatchUi %tmp.8 28 23 30 ];
+        %tmp.8 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.9 28 31 43 ];
+        %tmp.9 = getv function %tmp.8 :loadResource;
+        symbol [ Rez %tmp.11 28 44 47 ];
+        %tmp.11 = getv ? :Rez;
+        symbol [ Fonts %tmp.12 28 48 53 ];
+        %tmp.12 = getv %tmp.11 :Fonts;
+        symbol [ FiraCodeFont %tmp.13 28 54 66 ];
+        %tmp.13 = getv %tmp.12 :FiraCodeFont;
+        %tmp.14 = invoke %tmp.8 %tmp.9(%tmp.13);
+        symbol [ firaCodeFont ? 28 8 20 ];
+        putv self :firaCodeFont %tmp.14;
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 30 8 ]
+        symbol [ WatchUi %tmp.15 30 26 33 ];
+        %tmp.15 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.16 30 34 46 ];
+        %tmp.16 = getv function %tmp.15 :loadResource;
+        symbol [ Rez %tmp.18 30 47 50 ];
+        %tmp.18 = getv ? :Rez;
+        symbol [ Drawables %tmp.19 30 51 60 ];
+        %tmp.19 = getv %tmp.18 :Drawables;
+        symbol [ BackgroundImage %tmp.20 30 61 76 ];
+        %tmp.20 = getv %tmp.19 :BackgroundImage;
+        %tmp.21 = invoke %tmp.15 %tmp.16(%tmp.20);
+        symbol [ backgroundImage ? 30 8 23 ];
+        putv self :backgroundImage %tmp.21;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_26_44_31_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 33; @symbol_functiondef = [onShow,33,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 36; @symbol_functiondef = [onUpdate,36,13,21]; @symbol_param<0> = [dc,36,22,24]; @symbol_param<0>_type<0> = [Gfx,36,28,31]; @symbol_param<0>_type<1> = [Dc,36,32,34]; ]
+    function onUpdate(dc as Gfx.Dc) as Void {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 38 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 38 8 10 ];
+        symbol [ setColor %tmp.2 38 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ backgroundColor %tmp.4 38 20 35 ];
+        %tmp.4 = getv ? :backgroundColor;
+        symbol [ backgroundColor %tmp.6 38 37 52 ];
+        %tmp.6 = getv ? :backgroundColor;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 39 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 39 8 10 ];
+        symbol [ clear %tmp.8 39 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 41 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 41 12 17 ];
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 41 20 22 ];
+        symbol [ getWidth %tmp.10 41 23 31 ];
+        %tmp.10 = getv function %tmp.9 :getWidth;
+        %tmp.11 = invoke %tmp.9 %tmp.10();
+        lputv %width.1 %tmp.11;
+        symbol [ width %width.1 41 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 42 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_stop" ]
+        %height.2 = local;
+        symbol [ height %height.2 42 12 18 ];
+        %tmp.12 = lgetv %dc;
+        symbol [ dc %tmp.12 42 21 23 ];
+        symbol [ getHeight %tmp.13 42 24 33 ];
+        %tmp.13 = getv function %tmp.12 :getHeight;
+        %tmp.14 = invoke %tmp.12 %tmp.13();
+        lputv %height.2 %tmp.14;
+        symbol [ height %height.2 42 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 43 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_stop" ]
+        %centerX.3 = local;
+        symbol [ centerX %centerX.3 43 12 19 ];
+        %tmp.15 = lgetv %width.1;
+        symbol [ width %tmp.15 43 22 27 ];
+        %tmp.16 = 2;
+        %tmp.17 = div %tmp.15 %tmp.16;
+        lputv %centerX.3 %tmp.17;
+        symbol [ centerX %centerX.3 43 12 19 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 44 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_stop" ]
+        %centerY.4 = local;
+        symbol [ centerY %centerY.4 44 12 19 ];
+        %tmp.18 = lgetv %height.2;
+        symbol [ height %tmp.18 44 22 28 ];
+        %tmp.19 = 2;
+        %tmp.20 = div %tmp.18 %tmp.19;
+        lputv %centerY.4 %tmp.20;
+        symbol [ centerY %centerY.4 44 12 19 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 45 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_stop" ]
+        %clockRadius.5 = local;
+        symbol [ clockRadius %clockRadius.5 45 12 23 ];
+        %tmp.21 = lgetv %width.1;
+        symbol [ width %tmp.21 45 27 32 ];
+        %tmp.22 = 2;
+        %tmp.23 = div %tmp.21 %tmp.22;
+        %tmp.24 = 10;
+        %tmp.25 = sub %tmp.23 %tmp.24;
+        lputv %clockRadius.5 %tmp.25;
+        symbol [ clockRadius %clockRadius.5 45 12 23 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 48 8 ]
+        %tmp.26 = self;
+        symbol [ drawHourTicks %tmp.27 48 8 21 ];
+        %tmp.27 = getv function %tmp.26 :drawHourTicks;
+        %tmp.28 = lgetv %dc;
+        symbol [ dc %tmp.28 48 22 24 ];
+        %tmp.29 = lgetv %centerX.3;
+        symbol [ centerX %tmp.29 48 26 33 ];
+        %tmp.30 = lgetv %centerY.4;
+        symbol [ centerY %tmp.30 48 35 42 ];
+        %tmp.31 = lgetv %clockRadius.5;
+        symbol [ clockRadius %tmp.31 48 44 55 ];
+        invoke %tmp.26 %tmp.27(%tmp.28, %tmp.29, %tmp.30, %tmp.31);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 50 8 ]
+        %tmp.32 = self;
+        symbol [ drawDate %tmp.33 50 8 16 ];
+        %tmp.33 = getv function %tmp.32 :drawDate;
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 50 17 19 ];
+        %tmp.35 = lgetv %centerX.3;
+        symbol [ centerX %tmp.35 50 21 28 ];
+        %tmp.36 = lgetv %centerY.4;
+        symbol [ centerY %tmp.36 50 30 37 ];
+        %tmp.37 = lgetv %clockRadius.5;
+        symbol [ clockRadius %tmp.37 50 39 50 ];
+        invoke %tmp.32 %tmp.33(%tmp.34, %tmp.35, %tmp.36, %tmp.37);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 51 8 ]
+        %tmp.38 = self;
+        symbol [ drawBattery %tmp.39 51 8 19 ];
+        %tmp.39 = getv function %tmp.38 :drawBattery;
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 51 20 22 ];
+        %tmp.41 = lgetv %centerX.3;
+        symbol [ centerX %tmp.41 51 24 31 ];
+        %tmp.42 = lgetv %centerY.4;
+        symbol [ centerY %tmp.42 51 33 40 ];
+        %tmp.43 = lgetv %clockRadius.5;
+        symbol [ clockRadius %tmp.43 51 42 53 ];
+        invoke %tmp.38 %tmp.39(%tmp.40, %tmp.41, %tmp.42, %tmp.43);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 52 8 ]
+        %tmp.44 = self;
+        symbol [ drawHands %tmp.45 52 8 17 ];
+        %tmp.45 = getv function %tmp.44 :drawHands;
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 52 18 20 ];
+        %tmp.47 = lgetv %centerX.3;
+        symbol [ centerX %tmp.47 52 22 29 ];
+        %tmp.48 = lgetv %centerY.4;
+        symbol [ centerY %tmp.48 52 31 38 ];
+        %tmp.49 = lgetv %clockRadius.5;
+        symbol [ clockRadius %tmp.49 52 40 51 ];
+        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.47, %tmp.48, %tmp.49);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_36_44_53_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 55; @symbol_functiondef = [onHide,55,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 58; @symbol_functiondef = [onExitSleep,58,13,24]; ]
+    function onExitSleep() as Void {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_58_35_61_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 59 8 ]
+        symbol [ Timer %tmp.3 59 26 31 ];
+        %tmp.3 = getm $.Toybox.Timer;
+        symbol [ Timer %tmp.4 59 32 37 ];
+        %tmp.4 = getv function ? %tmp.3 :Timer;
+        %tmp.1 = newc %tmp.4 ();
+        symbol [ updateTimer ? 59 8 19 ];
+        putv self :updateTimer %tmp.1;
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 60 8 ]
+        symbol [ updateTimer %tmp.6 60 8 19 ];
+        %tmp.6 = getv ? :updateTimer;
+        symbol [ start %tmp.7 60 20 25 ];
+        %tmp.7 = getv function %tmp.6 :start;
+        %tmp.8 = self;
+        symbol [ method %tmp.9 60 26 32 ];
+        %tmp.9 = getv function %tmp.8 :method;
+        %tmp.11 = const :onTimerTick;
+        symbol [ onTimerTick %tmp.11 60 34 45 const ];
+        %tmp.12 = invoke %tmp.8 %tmp.9(%tmp.11);
+        %tmp.13 = 1000;
+        %tmp.14 = true;
+        invoke %tmp.6 %tmp.7(%tmp.12, %tmp.13, %tmp.14);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_58_35_61_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 63; @symbol_functiondef = [onEnterSleep,63,13,25]; ]
+    function onEnterSleep() as Void {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_63_36_68_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 64 8 ]
+C__dev_custom_watchface_source_custom_watchfaceView_mc_64_8_67_8_if_stmt:
+        symbol [ updateTimer %tmp.2 64 12 23 ];
+        %tmp.2 = getv ? :updateTimer;
+        %tmp.3 = null;
+        %tmp.4 = ne %tmp.2 %tmp.3;
+        bf %tmp.4 @C__dev_custom_watchface_source_custom_watchfaceView_mc_64_8_67_8_if_end;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_64_8_67_8_if_true:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_64_33_67_8_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 65 12 ]
+        symbol [ updateTimer %tmp.6 65 12 23 ];
+        %tmp.6 = getv ? :updateTimer;
+        %tmp.7 = as %tmp.6 { (!Null) };
+        symbol [ stop %tmp.8 65 24 28 ];
+        %tmp.8 = getv function %tmp.7 :stop;
+        invoke %tmp.7 %tmp.8();
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 66 12 ]
+        %tmp.9 = null;
+        symbol [ updateTimer ? 66 12 23 ];
+        putv self :updateTimer %tmp.9;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_64_33_67_8_stop:
+        goto @C__dev_custom_watchface_source_custom_watchfaceView_mc_64_8_67_8_if_end;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_64_8_67_8_if_end:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_63_36_68_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 70; @symbol_functiondef = [onTimerTick,70,13,24]; ]
+    function onTimerTick() as Void {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_70_35_72_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 71 8 ]
+        symbol [ WatchUi %tmp.1 71 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.2 71 16 29 ];
+        %tmp.2 = getv function %tmp.1 :requestUpdate;
+        invoke %tmp.1 %tmp.2();
+C__dev_custom_watchface_source_custom_watchfaceView_mc_70_35_72_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 75; @symbol_functiondef = [drawDate,75,13,21]; @symbol_param<0> = [dc,75,22,24]; @symbol_param<1> = [centerX,75,26,33]; @symbol_param<2> = [centerY,75,35,42]; @symbol_param<3> = [radius,75,44,50]; ]
+    function drawDate(dc, centerX, centerY, radius) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 76 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_stop" ]
+        %now.1 = local;
+        symbol [ now %now.1 76 12 15 ];
+        symbol [ Time %tmp.2 76 18 22 ];
+        %tmp.2 = getv ? :Time;
+        symbol [ now %tmp.3 76 23 26 ];
+        %tmp.3 = getv function %tmp.2 :now;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        lputv %now.1 %tmp.4;
+        symbol [ now %now.1 76 12 15 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 77 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_stop" ]
+        %date.2 = local;
+        symbol [ date %date.2 77 12 16 ];
+        symbol [ Gregorian %tmp.5 77 19 28 ];
+        %tmp.5 = getm $.Toybox.Time.Gregorian;
+        symbol [ info %tmp.6 77 29 33 ];
+        %tmp.6 = getv function %tmp.5 :info;
+        %tmp.7 = lgetv %now.1;
+        symbol [ now %tmp.7 77 34 37 ];
+        symbol [ Time %tmp.9 77 39 43 ];
+        %tmp.9 = getv ? :Time;
+        symbol [ FORMAT_MEDIUM %tmp.10 77 44 57 ];
+        %tmp.10 = getv %tmp.9 :FORMAT_MEDIUM;
+        %tmp.11 = invoke %tmp.5 %tmp.6(%tmp.7, %tmp.10);
+        lputv %date.2 %tmp.11;
+        symbol [ date %date.2 77 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 78 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_stop" ]
+        %dateString.3 = local;
+        symbol [ dateString %dateString.3 78 12 22 ];
+        symbol [ Language %tmp.12 78 25 33 ];
+        %tmp.12 = getm $.Toybox.Lang;
+        symbol [ format %tmp.13 78 34 40 ];
+        %tmp.13 = getv function %tmp.12 :format;
+        %tmp.14 = "$1$, $2$ $3$";
+        %tmp.15 = newa 3;
+        %tmp.16 = lgetv %date.2;
+        symbol [ date %tmp.16 78 58 62 ];
+        symbol [ day_of_week %tmp.17 78 63 74 ];
+        %tmp.17 = getv %tmp.16 :day_of_week;
+        %tmp.18 = dup %tmp.15;
+        %tmp.19 = aputv %tmp.18 0 %tmp.17;
+        %tmp.20 = lgetv %date.2;
+        symbol [ date %tmp.20 78 76 80 ];
+        symbol [ month %tmp.21 78 81 86 ];
+        %tmp.21 = getv %tmp.20 :month;
+        %tmp.22 = dup %tmp.19;
+        %tmp.23 = aputv %tmp.22 1 %tmp.21;
+        %tmp.24 = lgetv %date.2;
+        symbol [ date %tmp.24 78 88 92 ];
+        symbol [ day %tmp.25 78 93 96 ];
+        %tmp.25 = getv %tmp.24 :day;
+        %tmp.26 = dup %tmp.23;
+        %tmp.27 = aputv %tmp.26 2 %tmp.25;
+        %tmp.28 = invoke %tmp.12 %tmp.13(%tmp.14, %tmp.27);
+        lputv %dateString.3 %tmp.28;
+        symbol [ dateString %dateString.3 78 12 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 79 8 ]
+        %tmp.29 = lgetv %dateString.3;
+        symbol [ dateString %tmp.29 79 21 31 ];
+        symbol [ toUpper %tmp.30 79 32 39 ];
+        %tmp.30 = getv function %tmp.29 :toUpper;
+        %tmp.31 = invoke %tmp.29 %tmp.30();
+        lputv %dateString.3 %tmp.31;
+        symbol [ dateString %dateString.3 79 8 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 81 8 ]
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 81 8 10 ];
+        symbol [ setColor %tmp.33 81 11 19 ];
+        %tmp.33 = getv function %tmp.32 :setColor;
+        symbol [ Gfx %tmp.34 81 20 23 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.35 81 24 35 ];
+        %tmp.35 = getv %tmp.34 :COLOR_WHITE;
+        symbol [ Gfx %tmp.36 81 37 40 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.37 81 41 58 ];
+        %tmp.37 = getv %tmp.36 :COLOR_TRANSPARENT;
+        invoke %tmp.32 %tmp.33(%tmp.35, %tmp.37);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 82 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_stop" ]
+        %dateY.4 = local;
+        symbol [ dateY %dateY.4 82 12 17 ];
+        %tmp.38 = lgetv %centerY;
+        symbol [ centerY %tmp.38 82 20 27 ];
+        %tmp.39 = lgetv %radius;
+        symbol [ radius %tmp.39 82 31 37 ];
+        %tmp.40 = 0.5;
+        %tmp.41 = mul %tmp.39 %tmp.40;
+        %tmp.42 = add %tmp.38 %tmp.41;
+        lputv %dateY.4 %tmp.42;
+        symbol [ dateY %dateY.4 82 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 83 8 ]
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 83 8 10 ];
+        symbol [ drawText %tmp.44 83 11 19 ];
+        %tmp.44 = getv function %tmp.43 :drawText;
+        %tmp.45 = lgetv %centerX;
+        symbol [ centerX %tmp.45 83 20 27 ];
+        %tmp.46 = lgetv %dateY.4;
+        symbol [ dateY %tmp.46 83 29 34 ];
+        symbol [ Gfx %tmp.47 83 36 39 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.48 83 40 50 ];
+        %tmp.48 = getv %tmp.47 :FONT_XTINY;
+        %tmp.49 = lgetv %dateString.3;
+        symbol [ dateString %tmp.49 83 52 62 ];
+        symbol [ Gfx %tmp.50 83 64 67 ];
+        %tmp.50 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.51 83 68 87 ];
+        %tmp.51 = getv %tmp.50 :TEXT_JUSTIFY_CENTER;
+        symbol [ Gfx %tmp.52 83 90 93 ];
+        %tmp.52 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.53 83 94 114 ];
+        %tmp.53 = getv %tmp.52 :TEXT_JUSTIFY_VCENTER;
+        %tmp.54 = bitor %tmp.51 %tmp.53;
+        invoke %tmp.43 %tmp.44(%tmp.45, %tmp.46, %tmp.48, %tmp.49, %tmp.54);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_75_52_84_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 98; @symbol_functiondef = [drawHourTicks,98,13,26]; @symbol_param<0> = [dc,98,27,29]; @symbol_param<1> = [centerX,98,31,38]; @symbol_param<2> = [centerY,98,40,47]; @symbol_param<3> = [radius,98,49,55]; ]
+    function drawHourTicks(dc, centerX, centerY, radius) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_98_57_121_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 99 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 99 8 10 ];
+        symbol [ setColor %tmp.2 99 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Gfx %tmp.3 99 20 23 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.4 99 24 35 ];
+        %tmp.4 = getv %tmp.3 :COLOR_WHITE;
+        symbol [ Gfx %tmp.5 99 37 40 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.6 99 41 58 ];
+        %tmp.6 = getv %tmp.5 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 101 8 ]
+        for @C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_test @C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_incr @C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_end;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_init:
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_begin" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 101 17 18 ];
+        %tmp.7 = 0;
+        lputv %i.1 %tmp.7;
+        symbol [ i %i.1 101 17 18 ];
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_test:
+        %tmp.8 = lgetv %i.1;
+        symbol [ i %tmp.8 101 24 25 ];
+        %tmp.9 = 12;
+        %tmp.10 = lt %tmp.8 %tmp.9;
+        bf %tmp.10 @C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_end;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_begin:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 102 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %angle.2 = local;
+        symbol [ angle %angle.2 102 16 21 ];
+        %tmp.11 = lgetv %i.1;
+        symbol [ i %tmp.11 102 24 25 ];
+        %tmp.12 = 30;
+        %tmp.13 = mul %tmp.11 %tmp.12;
+        symbol [ Math %tmp.14 102 33 37 ];
+        %tmp.14 = getm $.Toybox.Math;
+        symbol [ PI %tmp.15 102 38 40 ];
+        %tmp.15 = getv %tmp.14 :PI;
+        %tmp.16 = mul %tmp.13 %tmp.15;
+        %tmp.17 = 180.0;
+        %tmp.18 = div %tmp.16 %tmp.17;
+        lputv %angle.2 %tmp.18;
+        symbol [ angle %angle.2 102 16 21 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 103 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %outerX.3 = local;
+        symbol [ outerX %outerX.3 103 16 22 ];
+        %tmp.19 = lgetv %centerX;
+        symbol [ centerX %tmp.19 103 25 32 ];
+        %tmp.20 = lgetv %radius;
+        symbol [ radius %tmp.20 103 35 41 ];
+        symbol [ Math %tmp.21 103 44 48 ];
+        %tmp.21 = getm $.Toybox.Math;
+        symbol [ sin %tmp.22 103 49 52 ];
+        %tmp.22 = getv function %tmp.21 :sin;
+        %tmp.23 = lgetv %angle.2;
+        symbol [ angle %tmp.23 103 53 58 ];
+        %tmp.24 = invoke %tmp.21 %tmp.22(%tmp.23);
+        %tmp.25 = mul %tmp.20 %tmp.24;
+        %tmp.26 = add %tmp.19 %tmp.25;
+        lputv %outerX.3 %tmp.26;
+        symbol [ outerX %outerX.3 103 16 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 104 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %outerY.4 = local;
+        symbol [ outerY %outerY.4 104 16 22 ];
+        %tmp.27 = lgetv %centerY;
+        symbol [ centerY %tmp.27 104 25 32 ];
+        %tmp.28 = lgetv %radius;
+        symbol [ radius %tmp.28 104 35 41 ];
+        symbol [ Math %tmp.29 104 44 48 ];
+        %tmp.29 = getm $.Toybox.Math;
+        symbol [ cos %tmp.30 104 49 52 ];
+        %tmp.30 = getv function %tmp.29 :cos;
+        %tmp.31 = lgetv %angle.2;
+        symbol [ angle %tmp.31 104 53 58 ];
+        %tmp.32 = invoke %tmp.29 %tmp.30(%tmp.31);
+        %tmp.33 = mul %tmp.28 %tmp.32;
+        %tmp.34 = sub %tmp.27 %tmp.33;
+        lputv %outerY.4 %tmp.34;
+        symbol [ outerY %outerY.4 104 16 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 105 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %tickLength.5 = local;
+        symbol [ tickLength %tickLength.5 105 16 26 ];
+        %tmp.35 = 0;
+        lputv %tickLength.5 %tmp.35;
+        symbol [ tickLength %tickLength.5 105 16 26 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 107 12 ]
+C__dev_custom_watchface_source_custom_watchfaceView_mc_107_12_114_12_if_stmt:
+        %tmp.36 = lgetv %i.1;
+        symbol [ i %tmp.36 107 16 17 ];
+        %tmp.37 = 3;
+        %tmp.38 = mod %tmp.36 %tmp.37;
+        %tmp.39 = 0;
+        %tmp.40 = eq %tmp.38 %tmp.39;
+        bf %tmp.40 @C__dev_custom_watchface_source_custom_watchfaceView_mc_107_12_114_12_if_else_false;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_107_12_114_12_if_true:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_107_28_110_12_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 108 16 ]
+        %tmp.41 = 50;
+        lputv %tickLength.5 %tmp.41;
+        symbol [ tickLength %tickLength.5 108 16 26 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 109 16 ]
+        %tmp.42 = lgetv %dc;
+        symbol [ dc %tmp.42 109 16 18 ];
+        symbol [ setPenWidth %tmp.43 109 19 30 ];
+        %tmp.43 = getv function %tmp.42 :setPenWidth;
+        %tmp.44 = 4;
+        invoke %tmp.42 %tmp.43(%tmp.44);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_107_28_110_12_stop:
+        goto @C__dev_custom_watchface_source_custom_watchfaceView_mc_107_12_114_12_if_end;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_107_12_114_12_if_else_false:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_111_17_114_12_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 112 16 ]
+        %tmp.45 = 20;
+        lputv %tickLength.5 %tmp.45;
+        symbol [ tickLength %tickLength.5 112 16 26 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 113 16 ]
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 113 16 18 ];
+        symbol [ setPenWidth %tmp.47 113 19 30 ];
+        %tmp.47 = getv function %tmp.46 :setPenWidth;
+        %tmp.48 = 3;
+        invoke %tmp.46 %tmp.47(%tmp.48);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_111_17_114_12_stop:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_107_12_114_12_if_end:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 116 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %innerRadius.6 = local;
+        symbol [ innerRadius %innerRadius.6 116 16 27 ];
+        %tmp.49 = lgetv %radius;
+        symbol [ radius %tmp.49 116 30 36 ];
+        %tmp.50 = lgetv %tickLength.5;
+        symbol [ tickLength %tmp.50 116 39 49 ];
+        %tmp.51 = sub %tmp.49 %tmp.50;
+        lputv %innerRadius.6 %tmp.51;
+        symbol [ innerRadius %innerRadius.6 116 16 27 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 117 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %innerX.7 = local;
+        symbol [ innerX %innerX.7 117 16 22 ];
+        %tmp.52 = lgetv %centerX;
+        symbol [ centerX %tmp.52 117 25 32 ];
+        %tmp.53 = lgetv %innerRadius.6;
+        symbol [ innerRadius %tmp.53 117 35 46 ];
+        symbol [ Math %tmp.54 117 49 53 ];
+        %tmp.54 = getm $.Toybox.Math;
+        symbol [ sin %tmp.55 117 54 57 ];
+        %tmp.55 = getv function %tmp.54 :sin;
+        %tmp.56 = lgetv %angle.2;
+        symbol [ angle %tmp.56 117 58 63 ];
+        %tmp.57 = invoke %tmp.54 %tmp.55(%tmp.56);
+        %tmp.58 = mul %tmp.53 %tmp.57;
+        %tmp.59 = add %tmp.52 %tmp.58;
+        lputv %innerX.7 %tmp.59;
+        symbol [ innerX %innerX.7 117 16 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 118 12 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop" ]
+        %innerY.8 = local;
+        symbol [ innerY %innerY.8 118 16 22 ];
+        %tmp.60 = lgetv %centerY;
+        symbol [ centerY %tmp.60 118 25 32 ];
+        %tmp.61 = lgetv %innerRadius.6;
+        symbol [ innerRadius %tmp.61 118 35 46 ];
+        symbol [ Math %tmp.62 118 49 53 ];
+        %tmp.62 = getm $.Toybox.Math;
+        symbol [ cos %tmp.63 118 54 57 ];
+        %tmp.63 = getv function %tmp.62 :cos;
+        %tmp.64 = lgetv %angle.2;
+        symbol [ angle %tmp.64 118 58 63 ];
+        %tmp.65 = invoke %tmp.62 %tmp.63(%tmp.64);
+        %tmp.66 = mul %tmp.61 %tmp.65;
+        %tmp.67 = sub %tmp.60 %tmp.66;
+        lputv %innerY.8 %tmp.67;
+        symbol [ innerY %innerY.8 118 16 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 119 12 ]
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 119 12 14 ];
+        symbol [ drawLine %tmp.69 119 15 23 ];
+        %tmp.69 = getv function %tmp.68 :drawLine;
+        %tmp.70 = lgetv %innerX.7;
+        symbol [ innerX %tmp.70 119 24 30 ];
+        %tmp.71 = lgetv %innerY.8;
+        symbol [ innerY %tmp.71 119 32 38 ];
+        %tmp.72 = lgetv %outerX.3;
+        symbol [ outerX %tmp.72 119 40 46 ];
+        %tmp.73 = lgetv %outerY.4;
+        symbol [ outerY %tmp.73 119 48 54 ];
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.71, %tmp.72, %tmp.73);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_37_120_8_stop:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_incr:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 101 ]
+        %tmp.76 = lgetv %i.1;
+        symbol [ i %tmp.76 101 32 33 ];
+        %tmp.77 = add %tmp.76 1;
+        lputv %i.1 %tmp.77;
+        symbol [ i %i.1 101 32 33 ];
+        goto @C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_test;
+C__dev_custom_watchface_source_custom_watchfaceView_mc_101_8_120_8_for_end:
+C__dev_custom_watchface_source_custom_watchfaceView_mc_98_57_121_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 141; @symbol_functiondef = [drawHands,141,13,22]; @symbol_param<0> = [dc,141,23,25]; @symbol_param<1> = [centerX,141,27,34]; @symbol_param<2> = [centerY,141,36,43]; @symbol_param<3> = [radius,141,45,51]; ]
+    function drawHands(dc, centerX, centerY, radius) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 142 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %clockTime.1 = local;
+        symbol [ clockTime %clockTime.1 142 12 21 ];
+        symbol [ Sys %tmp.1 142 24 27 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.2 142 28 40 ];
+        %tmp.2 = getv function %tmp.1 :getClockTime;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %clockTime.1 %tmp.3;
+        symbol [ clockTime %clockTime.1 142 12 21 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 143 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %hour.2 = local;
+        symbol [ hour %hour.2 143 12 16 ];
+        %tmp.4 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.4 143 19 28 ];
+        symbol [ hour %tmp.5 143 29 33 ];
+        %tmp.5 = getv %tmp.4 :hour;
+        %tmp.6 = 12;
+        %tmp.7 = mod %tmp.5 %tmp.6;
+        lputv %hour.2 %tmp.7;
+        symbol [ hour %hour.2 143 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 144 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %minute.3 = local;
+        symbol [ minute %minute.3 144 12 18 ];
+        %tmp.8 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.8 144 21 30 ];
+        symbol [ min %tmp.9 144 31 34 ];
+        %tmp.9 = getv %tmp.8 :min;
+        lputv %minute.3 %tmp.9;
+        symbol [ minute %minute.3 144 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 145 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %second.4 = local;
+        symbol [ second %second.4 145 12 18 ];
+        %tmp.10 = lgetv %clockTime.1;
+        symbol [ clockTime %tmp.10 145 21 30 ];
+        symbol [ sec %tmp.11 145 31 34 ];
+        %tmp.11 = getv %tmp.10 :sec;
+        lputv %second.4 %tmp.11;
+        symbol [ second %second.4 145 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 147 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %minuteAngle.5 = local;
+        symbol [ minuteAngle %minuteAngle.5 147 12 23 ];
+        %tmp.12 = lgetv %minute.3;
+        symbol [ minute %tmp.12 147 26 32 ];
+        %tmp.13 = 6;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        symbol [ Math %tmp.15 147 39 43 ];
+        %tmp.15 = getm $.Toybox.Math;
+        symbol [ PI %tmp.16 147 44 46 ];
+        %tmp.16 = getv %tmp.15 :PI;
+        %tmp.17 = mul %tmp.14 %tmp.16;
+        %tmp.18 = 180.0;
+        %tmp.19 = div %tmp.17 %tmp.18;
+        lputv %minuteAngle.5 %tmp.19;
+        symbol [ minuteAngle %minuteAngle.5 147 12 23 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 148 8 ]
+        %tmp.20 = self;
+        symbol [ drawHand %tmp.21 148 8 16 ];
+        %tmp.21 = getv function %tmp.20 :drawHand;
+        %tmp.22 = lgetv %dc;
+        symbol [ dc %tmp.22 148 17 19 ];
+        %tmp.23 = lgetv %centerX;
+        symbol [ centerX %tmp.23 148 21 28 ];
+        %tmp.24 = lgetv %centerY;
+        symbol [ centerY %tmp.24 148 30 37 ];
+        %tmp.25 = lgetv %minuteAngle.5;
+        symbol [ minuteAngle %tmp.25 148 39 50 ];
+        %tmp.26 = lgetv %radius;
+        symbol [ radius %tmp.26 148 52 58 ];
+        %tmp.27 = 0.9;
+        %tmp.28 = mul %tmp.26 %tmp.27;
+        %tmp.29 = 6;
+        symbol [ Gfx %tmp.30 148 69 72 ];
+        %tmp.30 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.31 148 73 84 ];
+        %tmp.31 = getv %tmp.30 :COLOR_WHITE;
+        invoke %tmp.20 %tmp.21(%tmp.22, %tmp.23, %tmp.24, %tmp.25, %tmp.28, %tmp.29, %tmp.31);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 150 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %hourAngle.6 = local;
+        symbol [ hourAngle %hourAngle.6 150 12 21 ];
+        %tmp.32 = lgetv %hour.2;
+        symbol [ hour %tmp.32 150 25 29 ];
+        %tmp.33 = 30;
+        %tmp.34 = mul %tmp.32 %tmp.33;
+        %tmp.35 = lgetv %minute.3;
+        symbol [ minute %tmp.35 150 37 43 ];
+        %tmp.36 = 0.5;
+        %tmp.37 = mul %tmp.35 %tmp.36;
+        %tmp.38 = add %tmp.34 %tmp.37;
+        symbol [ Math %tmp.39 150 53 57 ];
+        %tmp.39 = getm $.Toybox.Math;
+        symbol [ PI %tmp.40 150 58 60 ];
+        %tmp.40 = getv %tmp.39 :PI;
+        %tmp.41 = mul %tmp.38 %tmp.40;
+        %tmp.42 = 180.0;
+        %tmp.43 = div %tmp.41 %tmp.42;
+        lputv %hourAngle.6 %tmp.43;
+        symbol [ hourAngle %hourAngle.6 150 12 21 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 151 8 ]
+        %tmp.44 = self;
+        symbol [ drawHand %tmp.45 151 8 16 ];
+        %tmp.45 = getv function %tmp.44 :drawHand;
+        %tmp.46 = lgetv %dc;
+        symbol [ dc %tmp.46 151 17 19 ];
+        %tmp.47 = lgetv %centerX;
+        symbol [ centerX %tmp.47 151 21 28 ];
+        %tmp.48 = lgetv %centerY;
+        symbol [ centerY %tmp.48 151 30 37 ];
+        %tmp.49 = lgetv %hourAngle.6;
+        symbol [ hourAngle %tmp.49 151 39 48 ];
+        %tmp.50 = lgetv %radius;
+        symbol [ radius %tmp.50 151 50 56 ];
+        %tmp.51 = 0.5;
+        %tmp.52 = mul %tmp.50 %tmp.51;
+        %tmp.53 = 7;
+        symbol [ Gfx %tmp.54 151 67 70 ];
+        %tmp.54 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.55 151 71 82 ];
+        %tmp.55 = getv %tmp.54 :COLOR_WHITE;
+        invoke %tmp.44 %tmp.45(%tmp.46, %tmp.47, %tmp.48, %tmp.49, %tmp.52, %tmp.53, %tmp.55);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 153 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %secondHandAngle.7 = local;
+        symbol [ secondHandAngle %secondHandAngle.7 153 12 27 ];
+        %tmp.56 = lgetv %second.4;
+        symbol [ second %tmp.56 153 30 36 ];
+        %tmp.57 = 6;
+        %tmp.58 = mul %tmp.56 %tmp.57;
+        symbol [ Math %tmp.59 153 43 47 ];
+        %tmp.59 = getm $.Toybox.Math;
+        symbol [ PI %tmp.60 153 48 50 ];
+        %tmp.60 = getv %tmp.59 :PI;
+        %tmp.61 = mul %tmp.58 %tmp.60;
+        %tmp.62 = 180.0;
+        %tmp.63 = div %tmp.61 %tmp.62;
+        lputv %secondHandAngle.7 %tmp.63;
+        symbol [ secondHandAngle %secondHandAngle.7 153 12 27 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 154 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %secondHandLength.8 = local;
+        symbol [ secondHandLength %secondHandLength.8 154 12 28 ];
+        %tmp.64 = lgetv %radius;
+        symbol [ radius %tmp.64 154 31 37 ];
+        %tmp.65 = 0.95;
+        %tmp.66 = mul %tmp.64 %tmp.65;
+        lputv %secondHandLength.8 %tmp.66;
+        symbol [ secondHandLength %secondHandLength.8 154 12 28 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 155 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop" ]
+        %secondHandThickness.9 = local;
+        symbol [ secondHandThickness %secondHandThickness.9 155 12 31 ];
+        %tmp.67 = 3;
+        lputv %secondHandThickness.9 %tmp.67;
+        symbol [ secondHandThickness %secondHandThickness.9 155 12 31 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 157 8 ]
+        %tmp.68 = self;
+        symbol [ drawSecondsHand %tmp.69 157 8 23 ];
+        %tmp.69 = getv function %tmp.68 :drawSecondsHand;
+        %tmp.70 = lgetv %dc;
+        symbol [ dc %tmp.70 157 24 26 ];
+        %tmp.71 = lgetv %centerX;
+        symbol [ centerX %tmp.71 157 28 35 ];
+        %tmp.72 = lgetv %centerY;
+        symbol [ centerY %tmp.72 157 37 44 ];
+        %tmp.73 = lgetv %secondHandAngle.7;
+        symbol [ secondHandAngle %tmp.73 157 46 61 ];
+        %tmp.74 = lgetv %secondHandLength.8;
+        symbol [ secondHandLength %tmp.74 157 63 79 ];
+        %tmp.75 = lgetv %secondHandThickness.9;
+        symbol [ secondHandThickness %tmp.75 157 81 100 ];
+        symbol [ Gfx %tmp.76 157 102 105 ];
+        %tmp.76 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.77 157 106 115 ];
+        %tmp.77 = getv %tmp.76 :COLOR_RED;
+        invoke %tmp.68 %tmp.69(%tmp.70, %tmp.71, %tmp.72, %tmp.73, %tmp.74, %tmp.75, %tmp.77);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 159 8 ]
+        %tmp.78 = lgetv %dc;
+        symbol [ dc %tmp.78 159 8 10 ];
+        symbol [ setColor %tmp.79 159 11 19 ];
+        %tmp.79 = getv function %tmp.78 :setColor;
+        symbol [ Gfx %tmp.80 159 20 23 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ COLOR_RED %tmp.81 159 24 33 ];
+        %tmp.81 = getv %tmp.80 :COLOR_RED;
+        symbol [ Gfx %tmp.82 159 35 38 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.83 159 39 56 ];
+        %tmp.83 = getv %tmp.82 :COLOR_TRANSPARENT;
+        invoke %tmp.78 %tmp.79(%tmp.81, %tmp.83);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 160 8 ]
+        %tmp.84 = lgetv %dc;
+        symbol [ dc %tmp.84 160 8 10 ];
+        symbol [ fillCircle %tmp.85 160 11 21 ];
+        %tmp.85 = getv function %tmp.84 :fillCircle;
+        %tmp.86 = lgetv %centerX;
+        symbol [ centerX %tmp.86 160 22 29 ];
+        %tmp.87 = lgetv %centerY;
+        symbol [ centerY %tmp.87 160 31 38 ];
+        %tmp.88 = 5;
+        invoke %tmp.84 %tmp.85(%tmp.86, %tmp.87, %tmp.88);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_141_53_161_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 163; @symbol_functiondef = [drawSecondsHand,163,13,28]; @symbol_param<0> = [dc,163,29,31]; @symbol_param<1> = [centerX,163,33,40]; @symbol_param<2> = [centerY,163,42,49]; @symbol_param<3> = [angle,163,51,56]; @symbol_param<4> = [length,163,58,64]; @symbol_param<5> = [penWidth,163,66,74]; @symbol_param<6> = [color,163,76,81]; ]
+    function drawSecondsHand(dc, centerX, centerY, angle, length, penWidth, color) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 164 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 164 8 10 ];
+        symbol [ setColor %tmp.2 164 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 164 20 25 ];
+        symbol [ Gfx %tmp.4 164 27 30 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 164 31 48 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 165 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 165 8 10 ];
+        symbol [ setPenWidth %tmp.7 165 11 22 ];
+        %tmp.7 = getv function %tmp.6 :setPenWidth;
+        %tmp.8 = lgetv %penWidth;
+        symbol [ penWidth %tmp.8 165 23 31 ];
+        invoke %tmp.6 %tmp.7(%tmp.8);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 166 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_stop" ]
+        %startX.1 = local;
+        symbol [ startX %startX.1 166 12 18 ];
+        %tmp.9 = lgetv %centerX;
+        symbol [ centerX %tmp.9 166 21 28 ];
+        %tmp.10 = lgetv %length;
+        symbol [ length %tmp.10 166 32 38 ];
+        %tmp.11 = 150;
+        %tmp.12 = sub %tmp.10 %tmp.11;
+        symbol [ Math %tmp.13 166 48 52 ];
+        %tmp.13 = getm $.Toybox.Math;
+        symbol [ sin %tmp.14 166 53 56 ];
+        %tmp.14 = getv function %tmp.13 :sin;
+        %tmp.15 = lgetv %angle;
+        symbol [ angle %tmp.15 166 57 62 ];
+        %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
+        %tmp.17 = mul %tmp.12 %tmp.16;
+        %tmp.18 = sub %tmp.9 %tmp.17;
+        lputv %startX.1 %tmp.18;
+        symbol [ startX %startX.1 166 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 167 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_stop" ]
+        %startY.2 = local;
+        symbol [ startY %startY.2 167 12 18 ];
+        %tmp.19 = lgetv %centerY;
+        symbol [ centerY %tmp.19 167 21 28 ];
+        %tmp.20 = lgetv %length;
+        symbol [ length %tmp.20 167 32 38 ];
+        %tmp.21 = 150;
+        %tmp.22 = sub %tmp.20 %tmp.21;
+        symbol [ Math %tmp.23 167 48 52 ];
+        %tmp.23 = getm $.Toybox.Math;
+        symbol [ cos %tmp.24 167 53 56 ];
+        %tmp.24 = getv function %tmp.23 :cos;
+        %tmp.25 = lgetv %angle;
+        symbol [ angle %tmp.25 167 57 62 ];
+        %tmp.26 = invoke %tmp.23 %tmp.24(%tmp.25);
+        %tmp.27 = mul %tmp.22 %tmp.26;
+        %tmp.28 = add %tmp.19 %tmp.27;
+        lputv %startY.2 %tmp.28;
+        symbol [ startY %startY.2 167 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 168 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_stop" ]
+        %endX.3 = local;
+        symbol [ endX %endX.3 168 12 16 ];
+        %tmp.29 = lgetv %centerX;
+        symbol [ centerX %tmp.29 168 19 26 ];
+        %tmp.30 = lgetv %length;
+        symbol [ length %tmp.30 168 29 35 ];
+        symbol [ Math %tmp.31 168 38 42 ];
+        %tmp.31 = getm $.Toybox.Math;
+        symbol [ sin %tmp.32 168 43 46 ];
+        %tmp.32 = getv function %tmp.31 :sin;
+        %tmp.33 = lgetv %angle;
+        symbol [ angle %tmp.33 168 47 52 ];
+        %tmp.34 = invoke %tmp.31 %tmp.32(%tmp.33);
+        %tmp.35 = mul %tmp.30 %tmp.34;
+        %tmp.36 = add %tmp.29 %tmp.35;
+        lputv %endX.3 %tmp.36;
+        symbol [ endX %endX.3 168 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 169 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_stop" ]
+        %endY.4 = local;
+        symbol [ endY %endY.4 169 12 16 ];
+        %tmp.37 = lgetv %centerY;
+        symbol [ centerY %tmp.37 169 19 26 ];
+        %tmp.38 = lgetv %length;
+        symbol [ length %tmp.38 169 29 35 ];
+        symbol [ Math %tmp.39 169 38 42 ];
+        %tmp.39 = getm $.Toybox.Math;
+        symbol [ cos %tmp.40 169 43 46 ];
+        %tmp.40 = getv function %tmp.39 :cos;
+        %tmp.41 = lgetv %angle;
+        symbol [ angle %tmp.41 169 47 52 ];
+        %tmp.42 = invoke %tmp.39 %tmp.40(%tmp.41);
+        %tmp.43 = mul %tmp.38 %tmp.42;
+        %tmp.44 = sub %tmp.37 %tmp.43;
+        lputv %endY.4 %tmp.44;
+        symbol [ endY %endY.4 169 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 171 8 ]
+        %tmp.45 = lgetv %dc;
+        symbol [ dc %tmp.45 171 8 10 ];
+        symbol [ drawLine %tmp.46 171 11 19 ];
+        %tmp.46 = getv function %tmp.45 :drawLine;
+        %tmp.47 = lgetv %startX.1;
+        symbol [ startX %tmp.47 171 20 26 ];
+        %tmp.48 = lgetv %startY.2;
+        symbol [ startY %tmp.48 171 28 34 ];
+        %tmp.49 = lgetv %endX.3;
+        symbol [ endX %tmp.49 171 36 40 ];
+        %tmp.50 = lgetv %endY.4;
+        symbol [ endY %tmp.50 171 42 46 ];
+        invoke %tmp.45 %tmp.46(%tmp.47, %tmp.48, %tmp.49, %tmp.50);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_163_83_172_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 174; @symbol_functiondef = [drawHand,174,13,21]; @symbol_param<0> = [dc,174,22,24]; @symbol_param<1> = [centerX,174,26,33]; @symbol_param<2> = [centerY,174,35,42]; @symbol_param<3> = [angle,174,44,49]; @symbol_param<4> = [length,174,51,57]; @symbol_param<5> = [penWidth,174,59,67]; @symbol_param<6> = [color,174,69,74]; ]
+    function drawHand(dc, centerX, centerY, angle, length, penWidth, color) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_174_76_181_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 175 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 175 8 10 ];
+        symbol [ setColor %tmp.2 175 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 175 20 25 ];
+        symbol [ Gfx %tmp.4 175 27 30 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 175 31 48 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 176 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 176 8 10 ];
+        symbol [ setPenWidth %tmp.7 176 11 22 ];
+        %tmp.7 = getv function %tmp.6 :setPenWidth;
+        %tmp.8 = lgetv %penWidth;
+        symbol [ penWidth %tmp.8 176 23 31 ];
+        invoke %tmp.6 %tmp.7(%tmp.8);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 177 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_174_76_181_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_174_76_181_4_stop" ]
+        %endX.1 = local;
+        symbol [ endX %endX.1 177 12 16 ];
+        %tmp.9 = lgetv %centerX;
+        symbol [ centerX %tmp.9 177 19 26 ];
+        %tmp.10 = lgetv %length;
+        symbol [ length %tmp.10 177 29 35 ];
+        symbol [ Math %tmp.11 177 38 42 ];
+        %tmp.11 = getm $.Toybox.Math;
+        symbol [ sin %tmp.12 177 43 46 ];
+        %tmp.12 = getv function %tmp.11 :sin;
+        %tmp.13 = lgetv %angle;
+        symbol [ angle %tmp.13 177 47 52 ];
+        %tmp.14 = invoke %tmp.11 %tmp.12(%tmp.13);
+        %tmp.15 = mul %tmp.10 %tmp.14;
+        %tmp.16 = add %tmp.9 %tmp.15;
+        lputv %endX.1 %tmp.16;
+        symbol [ endX %endX.1 177 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 178 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_174_76_181_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_174_76_181_4_stop" ]
+        %endY.2 = local;
+        symbol [ endY %endY.2 178 12 16 ];
+        %tmp.17 = lgetv %centerY;
+        symbol [ centerY %tmp.17 178 19 26 ];
+        %tmp.18 = lgetv %length;
+        symbol [ length %tmp.18 178 29 35 ];
+        symbol [ Math %tmp.19 178 38 42 ];
+        %tmp.19 = getm $.Toybox.Math;
+        symbol [ cos %tmp.20 178 43 46 ];
+        %tmp.20 = getv function %tmp.19 :cos;
+        %tmp.21 = lgetv %angle;
+        symbol [ angle %tmp.21 178 47 52 ];
+        %tmp.22 = invoke %tmp.19 %tmp.20(%tmp.21);
+        %tmp.23 = mul %tmp.18 %tmp.22;
+        %tmp.24 = sub %tmp.17 %tmp.23;
+        lputv %endY.2 %tmp.24;
+        symbol [ endY %endY.2 178 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 180 8 ]
+        %tmp.25 = lgetv %dc;
+        symbol [ dc %tmp.25 180 8 10 ];
+        symbol [ drawLine %tmp.26 180 11 19 ];
+        %tmp.26 = getv function %tmp.25 :drawLine;
+        %tmp.27 = lgetv %centerX;
+        symbol [ centerX %tmp.27 180 20 27 ];
+        %tmp.28 = lgetv %centerY;
+        symbol [ centerY %tmp.28 180 29 36 ];
+        %tmp.29 = lgetv %endX.1;
+        symbol [ endX %tmp.29 180 38 42 ];
+        %tmp.30 = lgetv %endY.2;
+        symbol [ endY %tmp.30 180 44 48 ];
+        invoke %tmp.25 %tmp.26(%tmp.27, %tmp.28, %tmp.29, %tmp.30);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_174_76_181_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 183; @symbol_functiondef = [drawHandShadowOffset,183,13,33]; @symbol_param<0> = [dc,183,34,36]; @symbol_param<1> = [centerX,183,38,45]; @symbol_param<2> = [centerY,183,47,54]; @symbol_param<3> = [angle,183,56,61]; @symbol_param<4> = [length,183,63,69]; @symbol_param<5> = [penWidth,183,71,79]; @symbol_param<6> = [color,183,81,86]; @symbol_param<7> = [offsetX,183,88,95]; @symbol_param<8> = [offsetY,183,97,104]; ]
+    function drawHandShadowOffset(dc, centerX, centerY, angle, length, penWidth, color, offsetX, offsetY) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 184 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 184 8 10 ];
+        symbol [ setColor %tmp.2 184 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        %tmp.3 = lgetv %color;
+        symbol [ color %tmp.3 184 20 25 ];
+        symbol [ Gfx %tmp.4 184 27 30 ];
+        %tmp.4 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.5 184 31 48 ];
+        %tmp.5 = getv %tmp.4 :COLOR_TRANSPARENT;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.5);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 185 8 ]
+        %tmp.6 = lgetv %dc;
+        symbol [ dc %tmp.6 185 8 10 ];
+        symbol [ setPenWidth %tmp.7 185 11 22 ];
+        %tmp.7 = getv function %tmp.6 :setPenWidth;
+        %tmp.8 = lgetv %penWidth;
+        symbol [ penWidth %tmp.8 185 23 31 ];
+        invoke %tmp.6 %tmp.7(%tmp.8);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 186 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_stop" ]
+        %startX.1 = local;
+        symbol [ startX %startX.1 186 12 18 ];
+        %tmp.9 = lgetv %centerX;
+        symbol [ centerX %tmp.9 186 21 28 ];
+        %tmp.10 = lgetv %offsetX;
+        symbol [ offsetX %tmp.10 186 31 38 ];
+        %tmp.11 = add %tmp.9 %tmp.10;
+        lputv %startX.1 %tmp.11;
+        symbol [ startX %startX.1 186 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 187 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_stop" ]
+        %startY.2 = local;
+        symbol [ startY %startY.2 187 12 18 ];
+        %tmp.12 = lgetv %centerY;
+        symbol [ centerY %tmp.12 187 21 28 ];
+        %tmp.13 = lgetv %offsetY;
+        symbol [ offsetY %tmp.13 187 31 38 ];
+        %tmp.14 = add %tmp.12 %tmp.13;
+        lputv %startY.2 %tmp.14;
+        symbol [ startY %startY.2 187 12 18 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 188 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_stop" ]
+        %endX.3 = local;
+        symbol [ endX %endX.3 188 12 16 ];
+        %tmp.15 = lgetv %centerX;
+        symbol [ centerX %tmp.15 188 19 26 ];
+        %tmp.16 = lgetv %length;
+        symbol [ length %tmp.16 188 29 35 ];
+        symbol [ Math %tmp.17 188 38 42 ];
+        %tmp.17 = getm $.Toybox.Math;
+        symbol [ sin %tmp.18 188 43 46 ];
+        %tmp.18 = getv function %tmp.17 :sin;
+        %tmp.19 = lgetv %angle;
+        symbol [ angle %tmp.19 188 47 52 ];
+        %tmp.20 = invoke %tmp.17 %tmp.18(%tmp.19);
+        %tmp.21 = mul %tmp.16 %tmp.20;
+        %tmp.22 = add %tmp.15 %tmp.21;
+        %tmp.23 = lgetv %offsetX;
+        symbol [ offsetX %tmp.23 188 56 63 ];
+        %tmp.24 = add %tmp.22 %tmp.23;
+        lputv %endX.3 %tmp.24;
+        symbol [ endX %endX.3 188 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 189 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_stop" ]
+        %endY.4 = local;
+        symbol [ endY %endY.4 189 12 16 ];
+        %tmp.25 = lgetv %centerY;
+        symbol [ centerY %tmp.25 189 19 26 ];
+        %tmp.26 = lgetv %length;
+        symbol [ length %tmp.26 189 29 35 ];
+        symbol [ Math %tmp.27 189 38 42 ];
+        %tmp.27 = getm $.Toybox.Math;
+        symbol [ cos %tmp.28 189 43 46 ];
+        %tmp.28 = getv function %tmp.27 :cos;
+        %tmp.29 = lgetv %angle;
+        symbol [ angle %tmp.29 189 47 52 ];
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        %tmp.31 = mul %tmp.26 %tmp.30;
+        %tmp.32 = sub %tmp.25 %tmp.31;
+        %tmp.33 = lgetv %offsetY;
+        symbol [ offsetY %tmp.33 189 56 63 ];
+        %tmp.34 = add %tmp.32 %tmp.33;
+        lputv %endY.4 %tmp.34;
+        symbol [ endY %endY.4 189 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 190 8 ]
+        %tmp.35 = lgetv %dc;
+        symbol [ dc %tmp.35 190 8 10 ];
+        symbol [ drawLine %tmp.36 190 11 19 ];
+        %tmp.36 = getv function %tmp.35 :drawLine;
+        %tmp.37 = lgetv %startX.1;
+        symbol [ startX %tmp.37 190 20 26 ];
+        %tmp.38 = lgetv %startY.2;
+        symbol [ startY %tmp.38 190 28 34 ];
+        %tmp.39 = lgetv %endX.3;
+        symbol [ endX %tmp.39 190 36 40 ];
+        %tmp.40 = lgetv %endY.4;
+        symbol [ endY %tmp.40 190 42 46 ];
+        invoke %tmp.35 %tmp.36(%tmp.37, %tmp.38, %tmp.39, %tmp.40);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_183_106_191_4_stop:
+    }
+    [ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 193; @symbol_functiondef = [drawBattery,193,13,24]; @symbol_param<0> = [dc,193,25,27]; @symbol_param<1> = [centerX,193,29,36]; @symbol_param<2> = [centerY,193,38,45]; @symbol_param<3> = [radius,193,47,53]; ]
+    function drawBattery(dc, centerX, centerY, radius) {
+C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start:
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 194 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %stats.1 = local;
+        symbol [ stats %stats.1 194 12 17 ];
+        symbol [ Sys %tmp.1 194 20 23 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ getSystemStats %tmp.2 194 24 38 ];
+        %tmp.2 = getv function %tmp.1 :getSystemStats;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %stats.1 %tmp.3;
+        symbol [ stats %stats.1 194 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 195 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %batteryPercent.2 = local;
+        symbol [ batteryPercent %batteryPercent.2 195 12 26 ];
+        %tmp.4 = lgetv %stats.1;
+        symbol [ stats %tmp.4 195 29 34 ];
+        symbol [ battery %tmp.5 195 35 42 ];
+        %tmp.5 = getv %tmp.4 :battery;
+        lputv %batteryPercent.2 %tmp.5;
+        symbol [ batteryPercent %batteryPercent.2 195 12 26 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 197 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %iconWidth.3 = local;
+        symbol [ iconWidth %iconWidth.3 197 12 21 ];
+        %tmp.6 = 14;
+        lputv %iconWidth.3 %tmp.6;
+        symbol [ iconWidth %iconWidth.3 197 12 21 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 198 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %iconHeight.4 = local;
+        symbol [ iconHeight %iconHeight.4 198 12 22 ];
+        %tmp.7 = 20;
+        lputv %iconHeight.4 %tmp.7;
+        symbol [ iconHeight %iconHeight.4 198 12 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 199 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %nubWidth.5 = local;
+        symbol [ nubWidth %nubWidth.5 199 12 20 ];
+        %tmp.8 = 6;
+        lputv %nubWidth.5 %tmp.8;
+        symbol [ nubWidth %nubWidth.5 199 12 20 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 200 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %nubHeight.6 = local;
+        symbol [ nubHeight %nubHeight.6 200 12 21 ];
+        %tmp.9 = 3;
+        lputv %nubHeight.6 %tmp.9;
+        symbol [ nubHeight %nubHeight.6 200 12 21 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 202 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %iconX.7 = local;
+        symbol [ iconX %iconX.7 202 12 17 ];
+        %tmp.10 = lgetv %centerX;
+        symbol [ centerX %tmp.10 202 20 27 ];
+        %tmp.11 = lgetv %iconWidth.3;
+        symbol [ iconWidth %tmp.11 202 31 40 ];
+        %tmp.12 = 2;
+        %tmp.13 = div %tmp.11 %tmp.12;
+        %tmp.14 = sub %tmp.10 %tmp.13;
+        lputv %iconX.7 %tmp.14;
+        symbol [ iconX %iconX.7 202 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 203 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %iconY.8 = local;
+        symbol [ iconY %iconY.8 203 12 17 ];
+        %tmp.15 = lgetv %centerY;
+        symbol [ centerY %tmp.15 203 20 27 ];
+        %tmp.16 = lgetv %radius;
+        symbol [ radius %tmp.16 203 31 37 ];
+        %tmp.17 = 0.55;
+        %tmp.18 = mul %tmp.16 %tmp.17;
+        %tmp.19 = sub %tmp.15 %tmp.18;
+        lputv %iconY.8 %tmp.19;
+        symbol [ iconY %iconY.8 203 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 205 8 ]
+        %tmp.20 = lgetv %dc;
+        symbol [ dc %tmp.20 205 8 10 ];
+        symbol [ setColor %tmp.21 205 11 19 ];
+        %tmp.21 = getv function %tmp.20 :setColor;
+        symbol [ Gfx %tmp.22 205 20 23 ];
+        %tmp.22 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.23 205 24 35 ];
+        %tmp.23 = getv %tmp.22 :COLOR_WHITE;
+        symbol [ Gfx %tmp.24 205 37 40 ];
+        %tmp.24 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.25 205 41 58 ];
+        %tmp.25 = getv %tmp.24 :COLOR_TRANSPARENT;
+        invoke %tmp.20 %tmp.21(%tmp.23, %tmp.25);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 206 8 ]
+        %tmp.26 = lgetv %dc;
+        symbol [ dc %tmp.26 206 8 10 ];
+        symbol [ setPenWidth %tmp.27 206 11 22 ];
+        %tmp.27 = getv function %tmp.26 :setPenWidth;
+        %tmp.28 = 2;
+        invoke %tmp.26 %tmp.27(%tmp.28);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 209 8 ]
+        %tmp.29 = lgetv %dc;
+        symbol [ dc %tmp.29 209 8 10 ];
+        symbol [ drawRoundedRectangle %tmp.30 209 11 31 ];
+        %tmp.30 = getv function %tmp.29 :drawRoundedRectangle;
+        %tmp.31 = lgetv %iconX.7;
+        symbol [ iconX %tmp.31 209 32 37 ];
+        %tmp.32 = lgetv %iconY.8;
+        symbol [ iconY %tmp.32 209 39 44 ];
+        %tmp.33 = lgetv %iconWidth.3;
+        symbol [ iconWidth %tmp.33 209 46 55 ];
+        %tmp.34 = lgetv %iconHeight.4;
+        symbol [ iconHeight %tmp.34 209 57 67 ];
+        %tmp.35 = 2;
+        invoke %tmp.29 %tmp.30(%tmp.31, %tmp.32, %tmp.33, %tmp.34, %tmp.35);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 212 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %nubX.9 = local;
+        symbol [ nubX %nubX.9 212 12 16 ];
+        %tmp.36 = lgetv %centerX;
+        symbol [ centerX %tmp.36 212 19 26 ];
+        %tmp.37 = lgetv %nubWidth.5;
+        symbol [ nubWidth %tmp.37 212 30 38 ];
+        %tmp.38 = 2;
+        %tmp.39 = div %tmp.37 %tmp.38;
+        %tmp.40 = sub %tmp.36 %tmp.39;
+        lputv %nubX.9 %tmp.40;
+        symbol [ nubX %nubX.9 212 12 16 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 213 8 ]
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 213 8 10 ];
+        symbol [ fillRectangle %tmp.42 213 11 24 ];
+        %tmp.42 = getv function %tmp.41 :fillRectangle;
+        %tmp.43 = lgetv %nubX.9;
+        symbol [ nubX %tmp.43 213 25 29 ];
+        %tmp.44 = lgetv %iconY.8;
+        symbol [ iconY %tmp.44 213 31 36 ];
+        %tmp.45 = lgetv %nubHeight.6;
+        symbol [ nubHeight %tmp.45 213 39 48 ];
+        %tmp.46 = sub %tmp.44 %tmp.45;
+        %tmp.47 = lgetv %nubWidth.5;
+        symbol [ nubWidth %tmp.47 213 50 58 ];
+        %tmp.48 = lgetv %nubHeight.6;
+        symbol [ nubHeight %tmp.48 213 60 69 ];
+        invoke %tmp.41 %tmp.42(%tmp.43, %tmp.46, %tmp.47, %tmp.48);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 216 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %fillPadding.10 = local;
+        symbol [ fillPadding %fillPadding.10 216 12 23 ];
+        %tmp.49 = 3;
+        lputv %fillPadding.10 %tmp.49;
+        symbol [ fillPadding %fillPadding.10 216 12 23 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 217 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %maxFillHeight.11 = local;
+        symbol [ maxFillHeight %maxFillHeight.11 217 12 25 ];
+        %tmp.50 = lgetv %iconHeight.4;
+        symbol [ iconHeight %tmp.50 217 28 38 ];
+        %tmp.51 = lgetv %fillPadding.10;
+        symbol [ fillPadding %tmp.51 217 42 53 ];
+        %tmp.52 = 2;
+        %tmp.53 = mul %tmp.51 %tmp.52;
+        %tmp.54 = sub %tmp.50 %tmp.53;
+        lputv %maxFillHeight.11 %tmp.54;
+        symbol [ maxFillHeight %maxFillHeight.11 217 12 25 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 218 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %fillHeight.12 = local;
+        symbol [ fillHeight %fillHeight.12 218 12 22 ];
+        %tmp.55 = lgetv %maxFillHeight.11;
+        symbol [ maxFillHeight %tmp.55 218 26 39 ];
+        %tmp.56 = lgetv %batteryPercent.2;
+        symbol [ batteryPercent %tmp.56 218 42 56 ];
+        %tmp.57 = mul %tmp.55 %tmp.56;
+        %tmp.58 = 100.0;
+        %tmp.59 = div %tmp.57 %tmp.58;
+        symbol [ toNumber %tmp.60 218 66 74 ];
+        %tmp.60 = getv function %tmp.59 :toNumber;
+        %tmp.61 = invoke %tmp.59 %tmp.60();
+        lputv %fillHeight.12 %tmp.61;
+        symbol [ fillHeight %fillHeight.12 218 12 22 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 219 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %fillY.13 = local;
+        symbol [ fillY %fillY.13 219 12 17 ];
+        %tmp.62 = lgetv %iconY.8;
+        symbol [ iconY %tmp.62 219 20 25 ];
+        %tmp.63 = lgetv %iconHeight.4;
+        symbol [ iconHeight %tmp.63 219 28 38 ];
+        %tmp.64 = add %tmp.62 %tmp.63;
+        %tmp.65 = lgetv %fillPadding.10;
+        symbol [ fillPadding %tmp.65 219 41 52 ];
+        %tmp.66 = sub %tmp.64 %tmp.65;
+        %tmp.67 = lgetv %fillHeight.12;
+        symbol [ fillHeight %tmp.67 219 55 65 ];
+        %tmp.68 = sub %tmp.66 %tmp.67;
+        lputv %fillY.13 %tmp.68;
+        symbol [ fillY %fillY.13 219 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 221 8 ]
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 221 8 10 ];
+        symbol [ setColor %tmp.70 221 11 19 ];
+        %tmp.70 = getv function %tmp.69 :setColor;
+        symbol [ Gfx %tmp.71 221 20 23 ];
+        %tmp.71 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.72 221 24 35 ];
+        %tmp.72 = getv %tmp.71 :COLOR_WHITE;
+        symbol [ Gfx %tmp.73 221 37 40 ];
+        %tmp.73 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.74 221 41 52 ];
+        %tmp.74 = getv %tmp.73 :COLOR_WHITE;
+        invoke %tmp.69 %tmp.70(%tmp.72, %tmp.74);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 222 8 ]
+        %tmp.75 = lgetv %dc;
+        symbol [ dc %tmp.75 222 8 10 ];
+        symbol [ fillRectangle %tmp.76 222 11 24 ];
+        %tmp.76 = getv function %tmp.75 :fillRectangle;
+        %tmp.77 = lgetv %iconX.7;
+        symbol [ iconX %tmp.77 222 25 30 ];
+        %tmp.78 = lgetv %fillPadding.10;
+        symbol [ fillPadding %tmp.78 222 33 44 ];
+        %tmp.79 = add %tmp.77 %tmp.78;
+        %tmp.80 = lgetv %fillY.13;
+        symbol [ fillY %tmp.80 222 46 51 ];
+        %tmp.81 = lgetv %iconWidth.3;
+        symbol [ iconWidth %tmp.81 222 53 62 ];
+        %tmp.82 = lgetv %fillPadding.10;
+        symbol [ fillPadding %tmp.82 222 66 77 ];
+        %tmp.83 = 2;
+        %tmp.84 = mul %tmp.82 %tmp.83;
+        %tmp.85 = sub %tmp.81 %tmp.84;
+        %tmp.86 = lgetv %fillHeight.12;
+        symbol [ fillHeight %tmp.86 222 84 94 ];
+        invoke %tmp.75 %tmp.76(%tmp.79, %tmp.80, %tmp.85, %tmp.86);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 225 8 ]
+        %tmp.87 = lgetv %dc;
+        symbol [ dc %tmp.87 225 8 10 ];
+        symbol [ setColor %tmp.88 225 11 19 ];
+        %tmp.88 = getv function %tmp.87 :setColor;
+        symbol [ Gfx %tmp.89 225 20 23 ];
+        %tmp.89 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.90 225 24 35 ];
+        %tmp.90 = getv %tmp.89 :COLOR_WHITE;
+        symbol [ Gfx %tmp.91 225 37 40 ];
+        %tmp.91 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.92 225 41 58 ];
+        %tmp.92 = getv %tmp.91 :COLOR_TRANSPARENT;
+        invoke %tmp.87 %tmp.88(%tmp.90, %tmp.92);
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 226 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %percentText.14 = local;
+        symbol [ percentText %percentText.14 226 12 23 ];
+        %tmp.93 = lgetv %batteryPercent.2;
+        symbol [ batteryPercent %tmp.93 226 26 40 ];
+        symbol [ toNumber %tmp.94 226 41 49 ];
+        %tmp.94 = getv function %tmp.93 :toNumber;
+        %tmp.95 = invoke %tmp.93 %tmp.94();
+        symbol [ toString %tmp.96 226 52 60 ];
+        %tmp.96 = getv function %tmp.95 :toString;
+        %tmp.97 = invoke %tmp.95 %tmp.96();
+        %tmp.98 = "%";
+        %tmp.99 = add %tmp.97 %tmp.98;
+        lputv %percentText.14 %tmp.99;
+        symbol [ percentText %percentText.14 226 12 23 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 227 8 ]
+        [ "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_start" "C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop" ]
+        %textY.15 = local;
+        symbol [ textY %textY.15 227 12 17 ];
+        %tmp.100 = lgetv %iconY.8;
+        symbol [ iconY %tmp.100 227 20 25 ];
+        %tmp.101 = lgetv %iconHeight.4;
+        symbol [ iconHeight %tmp.101 227 28 38 ];
+        %tmp.102 = add %tmp.100 %tmp.101;
+        %tmp.103 = 25;
+        %tmp.104 = add %tmp.102 %tmp.103;
+        lputv %textY.15 %tmp.104;
+        symbol [ textY %textY.15 227 12 17 ];
+[ "C:\dev\custom-watchface\source\custom-watchfaceView.mc" 228 8 ]
+        %tmp.105 = lgetv %dc;
+        symbol [ dc %tmp.105 228 8 10 ];
+        symbol [ drawText %tmp.106 228 11 19 ];
+        %tmp.106 = getv function %tmp.105 :drawText;
+        %tmp.107 = lgetv %centerX;
+        symbol [ centerX %tmp.107 228 20 27 ];
+        %tmp.108 = lgetv %textY.15;
+        symbol [ textY %tmp.108 228 29 34 ];
+        symbol [ Gfx %tmp.109 228 36 39 ];
+        %tmp.109 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.110 228 40 50 ];
+        %tmp.110 = getv %tmp.109 :FONT_XTINY;
+        %tmp.111 = lgetv %percentText.14;
+        symbol [ percentText %tmp.111 228 52 63 ];
+        symbol [ Gfx %tmp.112 228 65 68 ];
+        %tmp.112 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.113 228 69 88 ];
+        %tmp.113 = getv %tmp.112 :TEXT_JUSTIFY_CENTER;
+        symbol [ Gfx %tmp.114 228 91 94 ];
+        %tmp.114 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_VCENTER %tmp.115 228 95 115 ];
+        %tmp.115 = getv %tmp.114 :TEXT_JUSTIFY_VCENTER;
+        %tmp.116 = bitor %tmp.113 %tmp.115;
+        invoke %tmp.105 %tmp.106(%tmp.107, %tmp.108, %tmp.110, %tmp.111, %tmp.116);
+C__dev_custom_watchface_source_custom_watchfaceView_mc_193_55_229_4_stop:
+    }
+}
+[ @file = "C:\dev\custom-watchface\source\custom-watchfaceView.mc"; @line = 1; ]
+<init> {
+}

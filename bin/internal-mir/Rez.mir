@@ -1,0 +1,1599 @@
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [WatchUi,2,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; @symbol_usingAlias = [Ui,3,24,26]; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [Graphics,5,13,21]; @symbol_usingAlias = [Gfx,5,25,28]; ]
+using Toybox.Graphics as :Gfx;
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 7; @symbol_moduledef = [Rez,7,7,10]; ]
+module Rez {
+    [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 8; @symbol_moduledef = [Drawables,8,11,20]; ]
+    module Drawables {
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 8; ]
+        <init> {
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 9; @position = 27; initialized = true; @symbol_vardef = [BackgroundImage,9,27,42]; @symbol_type<0> = [ResourceId,9,46,56]; ]
+        var BackgroundImage as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 10; @position = 27; initialized = true; @symbol_vardef = [LauncherIcon,10,27,39]; @symbol_type<0> = [ResourceId,10,43,53]; ]
+        var LauncherIcon as ResourceId;
+    }
+    [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 13; @symbol_moduledef = [Fonts,13,11,16]; ]
+    module Fonts {
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 13; ]
+        <init> {
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 14; @position = 27; initialized = true; @symbol_vardef = [CascadiaFont,14,27,39]; @symbol_type<0> = [ResourceId,14,43,53]; ]
+        var CascadiaFont as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 15; @position = 27; initialized = true; @symbol_vardef = [FiraCodeFont,15,27,39]; @symbol_type<0> = [ResourceId,15,43,53]; ]
+        var FiraCodeFont as ResourceId;
+    }
+    [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 18; @symbol_moduledef = [Layouts,18,11,18]; ]
+    module Layouts {
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 18; ]
+        <init> {
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 19; @symbol_functiondef = [WatchFace,19,17,26]; @symbol_param<0> = [dc,19,27,29]; @symbol_param<0>_type<0> = [Graphics,19,33,41]; @symbol_param<0>_type<1> = [Dc,19,42,44]; @symbol_return<0> = [Array,19,49,54]; @symbol_return<1> = [WatchUi,19,55,62]; @symbol_return<2> = [Drawable,19,63,71]; ]
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+c__dev_custom_watchface_bin_gen_006_B4433_00_source_Rez_mcgen_19_73_25_8_start:
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 20 12 ]
+            [ "c__dev_custom_watchface_bin_gen_006_B4433_00_source_Rez_mcgen_19_73_25_8_start" "c__dev_custom_watchface_bin_gen_006_B4433_00_source_Rez_mcgen_19_73_25_8_stop" ]
+            %rez_cmp_local_custom_drawable_11939594661139614796.1 = local;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.1 20 16 66 ];
+            symbol [ Background %tmp.4 20 73 83 ];
+            %tmp.4 = getv ? :Background;
+            %tmp.1 = newc %tmp.4 ();
+            lputv %rez_cmp_local_custom_drawable_11939594661139614796.1 %tmp.1;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %rez_cmp_local_custom_drawable_11939594661139614796.1 20 16 66 ];
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 22 12 ]
+            [ "c__dev_custom_watchface_bin_gen_006_B4433_00_source_Rez_mcgen_19_73_25_8_start" "c__dev_custom_watchface_bin_gen_006_B4433_00_source_Rez_mcgen_19_73_25_8_stop" ]
+            %rez_cmp_local_text_TimeLabel.2 = local;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 22 16 44 ];
+            symbol [ WatchUi %tmp.7 22 51 58 ];
+            %tmp.7 = getm $.Toybox.WatchUi;
+            symbol [ Text %tmp.8 22 59 63 ];
+            %tmp.8 = getv function ? %tmp.7 :Text;
+            %tmp.9 = newd 6;
+            %tmp.11 = const :identifier;
+            symbol [ identifier %tmp.11 22 66 76 const ];
+            %tmp.12 = "TimeLabel";
+            %tmp.13 = dup %tmp.9;
+            %tmp.14 = aputv %tmp.13 %tmp.11 %tmp.12;
+            %tmp.16 = const :color;
+            symbol [ color %tmp.16 22 92 97 const ];
+            symbol [ Graphics %tmp.17 22 99 107 ];
+            %tmp.17 = getm $.Toybox.Graphics;
+            symbol [ COLOR_BLUE %tmp.18 22 108 118 ];
+            %tmp.18 = getv %tmp.17 :COLOR_BLUE;
+            %tmp.19 = dup %tmp.14;
+            %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+            %tmp.22 = const :locX;
+            symbol [ locX %tmp.22 22 121 125 const ];
+            %tmp.23 = lgetv %dc;
+            symbol [ dc %tmp.23 22 128 130 ];
+            symbol [ getWidth %tmp.24 22 131 139 ];
+            %tmp.24 = getv function %tmp.23 :getWidth;
+            %tmp.25 = invoke %tmp.23 %tmp.24();
+            %tmp.26 = 0.5;
+            %tmp.27 = mul %tmp.25 %tmp.26;
+            %tmp.28 = dup %tmp.20;
+            %tmp.29 = aputv %tmp.28 %tmp.22 %tmp.27;
+            %tmp.31 = const :locY;
+            symbol [ locY %tmp.31 22 151 155 const ];
+            %tmp.32 = lgetv %dc;
+            symbol [ dc %tmp.32 22 159 161 ];
+            symbol [ getHeight %tmp.33 22 162 171 ];
+            %tmp.33 = getv function %tmp.32 :getHeight;
+            %tmp.34 = invoke %tmp.32 %tmp.33();
+            %tmp.35 = lgetv %dc;
+            symbol [ dc %tmp.35 22 176 178 ];
+            symbol [ getFontHeight %tmp.36 22 179 192 ];
+            %tmp.36 = getv function %tmp.35 :getFontHeight;
+            symbol [ Graphics %tmp.37 22 193 201 ];
+            %tmp.37 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.38 22 202 212 ];
+            %tmp.38 = getv %tmp.37 :FONT_LARGE;
+            %tmp.39 = invoke %tmp.35 %tmp.36(%tmp.38);
+            %tmp.40 = sub %tmp.34 %tmp.39;
+            %tmp.41 = 0.5;
+            %tmp.42 = mul %tmp.40 %tmp.41;
+            %tmp.43 = dup %tmp.29;
+            %tmp.44 = aputv %tmp.43 %tmp.31 %tmp.42;
+            %tmp.46 = const :justification;
+            symbol [ justification %tmp.46 22 224 237 const ];
+            symbol [ Graphics %tmp.47 22 239 247 ];
+            %tmp.47 = getm $.Toybox.Graphics;
+            symbol [ TEXT_JUSTIFY_CENTER %tmp.48 22 248 267 ];
+            %tmp.48 = getv %tmp.47 :TEXT_JUSTIFY_CENTER;
+            %tmp.49 = dup %tmp.44;
+            %tmp.50 = aputv %tmp.49 %tmp.46 %tmp.48;
+            %tmp.52 = const :font;
+            symbol [ font %tmp.52 22 270 274 const ];
+            symbol [ Graphics %tmp.53 22 276 284 ];
+            %tmp.53 = getm $.Toybox.Graphics;
+            symbol [ FONT_LARGE %tmp.54 22 285 295 ];
+            %tmp.54 = getv %tmp.53 :FONT_LARGE;
+            %tmp.55 = dup %tmp.50;
+            %tmp.56 = aputv %tmp.55 %tmp.52 %tmp.54;
+            %tmp.5 = newc %tmp.8 (%tmp.56);
+            lputv %rez_cmp_local_text_TimeLabel.2 %tmp.5;
+            symbol [ rez_cmp_local_text_TimeLabel %rez_cmp_local_text_TimeLabel.2 22 16 44 ];
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 24 12 ]
+            %tmp.57 = newa 2 Array<WatchUi.Drawable>;
+            symbol [ Array %tmp.57 24 105 110 ];
+            symbol [ WatchUi %tmp.57 24 111 118 ];
+            symbol [ Drawable %tmp.57 24 119 127 ];
+            %tmp.58 = lgetv %rez_cmp_local_custom_drawable_11939594661139614796.1;
+            symbol [ rez_cmp_local_custom_drawable_11939594661139614796 %tmp.58 24 20 70 ];
+            %tmp.59 = dup %tmp.57;
+            %tmp.60 = aputv %tmp.59 0 %tmp.58;
+            %tmp.61 = lgetv %rez_cmp_local_text_TimeLabel.2;
+            symbol [ rez_cmp_local_text_TimeLabel %tmp.61 24 72 100 ];
+            %tmp.62 = dup %tmp.60;
+            %tmp.63 = aputv %tmp.62 1 %tmp.61;
+            ret %tmp.63;
+c__dev_custom_watchface_bin_gen_006_B4433_00_source_Rez_mcgen_19_73_25_8_stop:
+        }
+    }
+    [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 28; @symbol_moduledef = [Strings,28,11,18]; ]
+    module Strings {
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 28; ]
+        <init> {
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 29; @position = 27; initialized = true; @symbol_vardef = [ColorLightGray,29,27,41]; @symbol_type<0> = [ResourceId,29,45,55]; ]
+        var ColorLightGray as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 30; @position = 27; initialized = true; @symbol_vardef = [ColorBlue,30,27,36]; @symbol_type<0> = [ResourceId,30,40,50]; ]
+        var ColorBlue as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 31; @position = 27; initialized = true; @symbol_vardef = [ColorRed,31,27,35]; @symbol_type<0> = [ResourceId,31,39,49]; ]
+        var ColorRed as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 32; @position = 27; initialized = true; @symbol_vardef = [ForegroundColorTitle,32,27,47]; @symbol_type<0> = [ResourceId,32,51,61]; ]
+        var ForegroundColorTitle as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 33; @position = 27; initialized = true; @symbol_vardef = [BackgroundColorTitle,33,27,47]; @symbol_type<0> = [ResourceId,33,51,61]; ]
+        var BackgroundColorTitle as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 34; @position = 27; initialized = true; @symbol_vardef = [ColorDarkGray,34,27,40]; @symbol_type<0> = [ResourceId,34,44,54]; ]
+        var ColorDarkGray as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 35; @position = 27; initialized = true; @symbol_vardef = [MilitaryFormatTitle,35,27,46]; @symbol_type<0> = [ResourceId,35,50,60]; ]
+        var MilitaryFormatTitle as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 36; @position = 27; initialized = true; @symbol_vardef = [ColorBlack,36,27,37]; @symbol_type<0> = [ResourceId,36,41,51]; ]
+        var ColorBlack as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 37; @position = 27; initialized = true; @symbol_vardef = [ColorWhite,37,27,37]; @symbol_type<0> = [ResourceId,37,41,51]; ]
+        var ColorWhite as ResourceId;
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 38; @position = 27; initialized = true; @symbol_vardef = [AppName,38,27,34]; @symbol_type<0> = [ResourceId,38,38,48]; ]
+        var AppName as ResourceId;
+    }
+    [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 41; @symbol_moduledef = [Styles,41,11,17]; ]
+    module Styles {
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 41; ]
+        <init> {
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 42; @symbol_moduledef = [prompt_font_enhanced_readability__body_with_title,42,15,64]; ]
+        module prompt_font_enhanced_readability__body_with_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 42; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 43; @position = 18; @symbol_constdef = [exclude,43,18,25]; @symbol_type<0> = [Boolean,43,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 46; @symbol_moduledef = [system_size__menu_header,46,15,39]; ]
+        module system_size__menu_header {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 46; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 47; @position = 18; @symbol_constdef = [width,47,18,23]; @symbol_type<0> = [Number,47,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 48; @position = 18; @symbol_constdef = [height,48,18,24]; @symbol_type<0> = [Number,48,28,34]; ]
+            const height as Number = 121;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 51; @symbol_moduledef = [system_loc__hint_button_left_bottom,51,15,50]; ]
+        module system_loc__hint_button_left_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 51; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 52; @position = 18; @symbol_constdef = [x,52,18,19]; @symbol_type<0> = [Number,52,23,29]; ]
+            const x as Number = 12;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 53; @position = 18; @symbol_constdef = [y,53,18,19]; @symbol_type<0> = [Number,53,23,29]; ]
+            const y as Number = 252;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 56; @symbol_moduledef = [prompt_font_enhanced_readability__body_no_title,56,15,62]; ]
+        module prompt_font_enhanced_readability__body_no_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 56; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 57; @position = 18; @symbol_constdef = [exclude,57,18,25]; @symbol_type<0> = [Boolean,57,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 60; @symbol_moduledef = [prompt_loc__body_no_title,60,15,40]; ]
+        module prompt_loc__body_no_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 60; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 61; @position = 18; @symbol_constdef = [x,61,18,19]; @symbol_type<0> = [Number,61,23,29]; ]
+            const x as Number = 65;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 62; @position = 18; @symbol_constdef = [y,62,18,19]; @symbol_type<0> = [Number,62,23,29]; ]
+            const y as Number = 60;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 65; @symbol_moduledef = [system_icon_dark__about,65,15,38]; ]
+        module system_icon_dark__about {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 65; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 66; @position = 18; @symbol_constdef = [filename,66,18,26]; @symbol_type<0> = [String,66,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__about.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 67; @position = 18; @symbol_constdef = [compress,67,18,26]; @symbol_type<0> = [String,67,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 68; @position = 18; @symbol_constdef = [dithering,68,18,27]; @symbol_type<0> = [String,68,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 69; @position = 18; @symbol_constdef = [automaticPalette,69,18,34]; @symbol_type<0> = [String,69,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 72; @symbol_moduledef = [system_icon_light__question,72,15,42]; ]
+        module system_icon_light__question {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 72; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 73; @position = 18; @symbol_constdef = [filename,73,18,26]; @symbol_type<0> = [String,73,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__question.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 74; @position = 18; @symbol_constdef = [compress,74,18,26]; @symbol_type<0> = [String,74,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 75; @position = 18; @symbol_constdef = [dithering,75,18,27]; @symbol_type<0> = [String,75,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 76; @position = 18; @symbol_constdef = [automaticPalette,76,18,34]; @symbol_type<0> = [String,76,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 79; @symbol_moduledef = [system_loc__hint_button_left_top,79,15,47]; ]
+        module system_loc__hint_button_left_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 79; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 80; @position = 18; @symbol_constdef = [exclude,80,18,25]; @symbol_type<0> = [Boolean,80,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 83; @symbol_moduledef = [prompt_font__title,83,15,33]; ]
+        module prompt_font__title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 83; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 84 18 ]
+                symbol [ Graphics %tmp.64 84 34 42 ];
+                %tmp.64 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.65 84 43 62 ];
+                %tmp.65 = getv %tmp.64 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.66 84 63 71 ];
+                %tmp.66 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.67 84 72 92 ];
+                %tmp.67 = getv %tmp.66 :TEXT_JUSTIFY_VCENTER;
+                %tmp.68 = bitor %tmp.65 %tmp.67;
+                putv self :justification %tmp.68;
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 85 18 ]
+                symbol [ Graphics %tmp.69 85 25 33 ];
+                %tmp.69 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.70 85 34 43 ];
+                %tmp.70 = getv %tmp.69 :FONT_TINY;
+                putv self :font %tmp.70;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 84; @position = 18; @symbol_constdef = [justification,84,18,31]; ]
+            const justification;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 85; @position = 18; @symbol_constdef = [font,85,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 88; @symbol_moduledef = [system_icon_dark__discard,88,15,40]; ]
+        module system_icon_dark__discard {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 88; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 89; @position = 18; @symbol_constdef = [filename,89,18,26]; @symbol_type<0> = [String,89,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__discard.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 90; @position = 18; @symbol_constdef = [compress,90,18,26]; @symbol_type<0> = [String,90,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 91; @position = 18; @symbol_constdef = [dithering,91,18,27]; @symbol_type<0> = [String,91,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 92; @position = 18; @symbol_constdef = [automaticPalette,92,18,34]; @symbol_type<0> = [String,92,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 95; @symbol_moduledef = [system_size__menu_item,95,15,37]; ]
+        module system_size__menu_item {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 95; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 96; @position = 18; @symbol_constdef = [width,96,18,23]; @symbol_type<0> = [Number,96,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 97; @position = 18; @symbol_constdef = [height,97,18,24]; @symbol_type<0> = [Number,97,28,34]; ]
+            const height as Number = 93;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 100; @symbol_moduledef = [system_color_dark__text,100,15,38]; ]
+        module system_color_dark__text {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 100; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 102 18 ]
+                symbol [ Graphics %tmp.71 102 31 39 ];
+                %tmp.71 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.72 102 40 57 ];
+                %tmp.72 = getv %tmp.71 :COLOR_TRANSPARENT;
+                putv self :background %tmp.72;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 101; @position = 18; @symbol_constdef = [color,101,18,23]; @symbol_type<0> = [Number,101,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 102; @position = 18; @symbol_constdef = [background,102,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 105; @symbol_moduledef = [system_icon_destructive__discard,105,15,47]; ]
+        module system_icon_destructive__discard {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 105; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 106; @position = 18; @symbol_constdef = [filename,106,18,26]; @symbol_type<0> = [String,106,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__discard.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 107; @position = 18; @symbol_constdef = [dithering,107,18,27]; @symbol_type<0> = [String,107,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 110; @symbol_moduledef = [system_icon_dark__hint_action_menu,110,15,49]; ]
+        module system_icon_dark__hint_action_menu {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 110; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 111; @position = 18; @symbol_constdef = [filename,111,18,26]; @symbol_type<0> = [String,111,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 112; @position = 18; @symbol_constdef = [dithering,112,18,27]; @symbol_type<0> = [String,112,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 115; @symbol_moduledef = [prompt_size__title,115,15,33]; ]
+        module prompt_size__title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 115; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 116; @position = 18; @symbol_constdef = [width,116,18,23]; @symbol_type<0> = [Number,116,27,33]; ]
+            const width as Number = 248;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 117; @position = 18; @symbol_constdef = [height,117,18,24]; @symbol_type<0> = [Number,117,28,34]; ]
+            const height as Number = 83;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 120; @symbol_moduledef = [confirmation_font__body,120,15,38]; ]
+        module confirmation_font__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 120; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 121 18 ]
+                symbol [ Graphics %tmp.73 121 34 42 ];
+                %tmp.73 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.74 121 43 62 ];
+                %tmp.74 = getv %tmp.73 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.75 121 63 71 ];
+                %tmp.75 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.76 121 72 92 ];
+                %tmp.76 = getv %tmp.75 :TEXT_JUSTIFY_VCENTER;
+                %tmp.77 = bitor %tmp.74 %tmp.76;
+                putv self :justification %tmp.77;
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 122 18 ]
+                symbol [ Graphics %tmp.78 122 25 33 ];
+                %tmp.78 = getm $.Toybox.Graphics;
+                symbol [ FONT_TINY %tmp.79 122 34 43 ];
+                %tmp.79 = getv %tmp.78 :FONT_TINY;
+                putv self :font %tmp.79;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 121; @position = 18; @symbol_constdef = [justification,121,18,31]; ]
+            const justification;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 122; @position = 18; @symbol_constdef = [font,122,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 125; @symbol_moduledef = [system_color_dark__background,125,15,44]; ]
+        module system_color_dark__background {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 125; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 126; @position = 18; @symbol_constdef = [color,126,18,23]; @symbol_type<0> = [Number,126,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 127; @position = 18; @symbol_constdef = [background,127,18,28]; @symbol_type<0> = [Number,127,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 130; @symbol_moduledef = [system_icon_destructive__hint_button_left_top,130,15,60]; ]
+        module system_icon_destructive__hint_button_left_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 130; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 131; @position = 18; @symbol_constdef = [exclude,131,18,25]; @symbol_type<0> = [Boolean,131,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 134; @symbol_moduledef = [system_size__launch_icon,134,15,39]; ]
+        module system_size__launch_icon {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 134; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 135; @position = 18; @symbol_constdef = [scaleX,135,18,24]; @symbol_type<0> = [Number,135,28,34]; ]
+            const scaleX as Number = 54;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 136; @position = 18; @symbol_constdef = [scaleY,136,18,24]; @symbol_type<0> = [Number,136,28,34]; ]
+            const scaleY as Number = 54;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 137; @position = 18; @symbol_constdef = [scaleRelativeTo,137,18,33]; @symbol_type<0> = [String,137,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 140; @symbol_moduledef = [confirmation_input__confirm,140,15,42]; ]
+        module confirmation_input__confirm {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 140; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 141 18 ]
+                symbol [ WatchUi %tmp.80 141 27 34 ];
+                %tmp.80 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.81 141 35 44 ];
+                %tmp.81 = getv %tmp.80 :KEY_ENTER;
+                putv self :button %tmp.81;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 141; @position = 18; @symbol_constdef = [button,141,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 144; @symbol_moduledef = [prompt_font__body_with_title,144,15,43]; ]
+        module prompt_font__body_with_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 144; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 145 18 ]
+                symbol [ Graphics %tmp.82 145 34 42 ];
+                %tmp.82 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.83 145 43 62 ];
+                %tmp.83 = getv %tmp.82 :TEXT_JUSTIFY_CENTER;
+                putv self :justification %tmp.83;
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 146 18 ]
+                symbol [ Graphics %tmp.84 146 25 33 ];
+                %tmp.84 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.85 146 34 44 ];
+                %tmp.85 = getv %tmp.84 :FONT_XTINY;
+                putv self :font %tmp.85;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 145; @position = 18; @symbol_constdef = [justification,145,18,31]; ]
+            const justification;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 146; @position = 18; @symbol_constdef = [font,146,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 149; @symbol_moduledef = [confirmation_loc__body,149,15,37]; ]
+        module confirmation_loc__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 149; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 150; @position = 18; @symbol_constdef = [x,150,18,19]; @symbol_type<0> = [Number,150,23,29]; ]
+            const x as Number = 61;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 151; @position = 18; @symbol_constdef = [y,151,18,19]; @symbol_type<0> = [Number,151,23,29]; ]
+            const y as Number = 89;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 154; @symbol_moduledef = [system_icon_destructive__hint_button_left_bottom,154,15,63]; ]
+        module system_icon_destructive__hint_button_left_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 154; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 155; @position = 18; @symbol_constdef = [filename,155,18,26]; @symbol_type<0> = [String,155,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__hint_button_left_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 156; @position = 18; @symbol_constdef = [dithering,156,18,27]; @symbol_type<0> = [String,156,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 159; @symbol_moduledef = [prompt_color_dark__background,159,15,44]; ]
+        module prompt_color_dark__background {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 159; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 160; @position = 18; @symbol_constdef = [color,160,18,23]; @symbol_type<0> = [Number,160,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 161; @position = 18; @symbol_constdef = [background,161,18,28]; @symbol_type<0> = [Number,161,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 164; @symbol_moduledef = [system_icon_destructive__hint_action_menu,164,15,56]; ]
+        module system_icon_destructive__hint_action_menu {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 164; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 165; @position = 18; @symbol_constdef = [filename,165,18,26]; @symbol_type<0> = [String,165,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 166; @position = 18; @symbol_constdef = [dithering,166,18,27]; @symbol_type<0> = [String,166,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 169; @symbol_moduledef = [system_loc__hint_action_menu,169,15,43]; ]
+        module system_loc__hint_action_menu {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 169; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 170; @position = 18; @symbol_constdef = [x,170,18,19]; @symbol_type<0> = [Number,170,23,29]; ]
+            const x as Number = 323;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 171; @position = 18; @symbol_constdef = [y,171,18,19]; @symbol_type<0> = [Number,171,23,29]; ]
+            const y as Number = 73;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 174; @symbol_moduledef = [confirmation_icon__hint_confirm,174,15,46]; ]
+        module confirmation_icon__hint_confirm {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 174; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 175; @position = 18; @symbol_constdef = [filename,175,18,26]; @symbol_type<0> = [String,175,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 176; @position = 18; @symbol_constdef = [dithering,176,18,27]; @symbol_type<0> = [String,176,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 179; @symbol_moduledef = [system_loc__hint_button_left_middle,179,15,50]; ]
+        module system_loc__hint_button_left_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 179; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 180; @position = 18; @symbol_constdef = [x,180,18,19]; @symbol_type<0> = [Number,180,23,29]; ]
+            const x as Number = 2;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 181; @position = 18; @symbol_constdef = [y,181,18,19]; @symbol_type<0> = [Number,181,23,29]; ]
+            const y as Number = 157;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 184; @symbol_moduledef = [prompt_size__body_no_title,184,15,41]; ]
+        module prompt_size__body_no_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 184; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 185; @position = 18; @symbol_constdef = [width,185,18,23]; @symbol_type<0> = [Number,185,27,33]; ]
+            const width as Number = 260;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 186; @position = 18; @symbol_constdef = [height,186,18,24]; @symbol_type<0> = [Number,186,28,34]; ]
+            const height as Number = 270;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 189; @symbol_moduledef = [system_icon_light__hint_button_left_top,189,15,54]; ]
+        module system_icon_light__hint_button_left_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 189; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 190; @position = 18; @symbol_constdef = [exclude,190,18,25]; @symbol_type<0> = [Boolean,190,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 193; @symbol_moduledef = [prompt_color_light__background,193,15,45]; ]
+        module prompt_color_light__background {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 193; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 194; @position = 18; @symbol_constdef = [color,194,18,23]; @symbol_type<0> = [Number,194,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 195; @position = 18; @symbol_constdef = [background,195,18,28]; @symbol_type<0> = [Number,195,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 198; @symbol_moduledef = [confirmation_input__delete,198,15,41]; ]
+        module confirmation_input__delete {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 198; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 199 18 ]
+                symbol [ WatchUi %tmp.86 199 27 34 ];
+                %tmp.86 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.87 199 35 43 ];
+                %tmp.87 = getv %tmp.86 :KEY_DOWN;
+                putv self :button %tmp.87;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 199; @position = 18; @symbol_constdef = [button,199,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 202; @symbol_moduledef = [system_icon_dark__hint_button_left_top,202,15,53]; ]
+        module system_icon_dark__hint_button_left_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 202; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 203; @position = 18; @symbol_constdef = [exclude,203,18,25]; @symbol_type<0> = [Boolean,203,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 206; @symbol_moduledef = [system_input__action_menu,206,15,40]; ]
+        module system_input__action_menu {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 206; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 207 18 ]
+                symbol [ WatchUi %tmp.88 207 27 34 ];
+                %tmp.88 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ENTER %tmp.89 207 35 44 ];
+                %tmp.89 = getv %tmp.88 :KEY_ENTER;
+                putv self :button %tmp.89;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 207; @position = 18; @symbol_constdef = [button,207,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 210; @symbol_moduledef = [system_icon_light__save,210,15,38]; ]
+        module system_icon_light__save {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 210; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 211; @position = 18; @symbol_constdef = [filename,211,18,26]; @symbol_type<0> = [String,211,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__save.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 212; @position = 18; @symbol_constdef = [compress,212,18,26]; @symbol_type<0> = [String,212,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 213; @position = 18; @symbol_constdef = [dithering,213,18,27]; @symbol_type<0> = [String,213,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 214; @position = 18; @symbol_constdef = [automaticPalette,214,18,34]; @symbol_type<0> = [String,214,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 217; @symbol_moduledef = [prompt_color_light__body,217,15,39]; ]
+        module prompt_color_light__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 217; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 219 18 ]
+                symbol [ Graphics %tmp.90 219 31 39 ];
+                %tmp.90 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.91 219 40 57 ];
+                %tmp.91 = getv %tmp.90 :COLOR_TRANSPARENT;
+                putv self :background %tmp.91;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 218; @position = 18; @symbol_constdef = [color,218,18,23]; @symbol_type<0> = [Number,218,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 219; @position = 18; @symbol_constdef = [background,219,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 222; @symbol_moduledef = [system_loc__subwindow,222,15,36]; ]
+        module system_loc__subwindow {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 222; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 223; @position = 18; @symbol_constdef = [exclude,223,18,25]; @symbol_type<0> = [Boolean,223,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 226; @symbol_moduledef = [system_icon_light__warning,226,15,41]; ]
+        module system_icon_light__warning {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 226; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 227; @position = 18; @symbol_constdef = [filename,227,18,26]; @symbol_type<0> = [String,227,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__warning.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 228; @position = 18; @symbol_constdef = [compress,228,18,26]; @symbol_type<0> = [String,228,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 229; @position = 18; @symbol_constdef = [dithering,229,18,27]; @symbol_type<0> = [String,229,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 230; @position = 18; @symbol_constdef = [automaticPalette,230,18,34]; @symbol_type<0> = [String,230,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 233; @symbol_moduledef = [confirmation_color_light__body,233,15,45]; ]
+        module confirmation_color_light__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 233; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 235 18 ]
+                symbol [ Graphics %tmp.92 235 31 39 ];
+                %tmp.92 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.93 235 40 57 ];
+                %tmp.93 = getv %tmp.92 :COLOR_TRANSPARENT;
+                putv self :background %tmp.93;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 234; @position = 18; @symbol_constdef = [color,234,18,23]; @symbol_type<0> = [Number,234,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 235; @position = 18; @symbol_constdef = [background,235,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 238; @symbol_moduledef = [confirmation_icon_light__hint_keep,238,15,49]; ]
+        module confirmation_icon_light__hint_keep {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 238; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 239; @position = 18; @symbol_constdef = [filename,239,18,26]; @symbol_type<0> = [String,239,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 240; @position = 18; @symbol_constdef = [dithering,240,18,27]; @symbol_type<0> = [String,240,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 243; @symbol_moduledef = [activity_color_light__background,243,15,47]; ]
+        module activity_color_light__background {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 243; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 244; @position = 18; @symbol_constdef = [color,244,18,23]; @symbol_type<0> = [Number,244,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 245; @position = 18; @symbol_constdef = [background,245,18,28]; @symbol_type<0> = [Number,245,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 248; @symbol_moduledef = [system_icon_positive__hint_button_right_top,248,15,58]; ]
+        module system_icon_positive__hint_button_right_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 248; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 249; @position = 18; @symbol_constdef = [filename,249,18,26]; @symbol_type<0> = [String,249,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 250; @position = 18; @symbol_constdef = [dithering,250,18,27]; @symbol_type<0> = [String,250,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 253; @symbol_moduledef = [system_size__screen,253,15,34]; ]
+        module system_size__screen {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 253; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 254; @position = 18; @symbol_constdef = [width,254,18,23]; @symbol_type<0> = [Number,254,27,33]; ]
+            const width as Number = 390;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 255; @position = 18; @symbol_constdef = [height,255,18,24]; @symbol_type<0> = [Number,255,28,34]; ]
+            const height as Number = 390;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 258; @symbol_moduledef = [system_icon_destructive__hint_button_right_bottom,258,15,64]; ]
+        module system_icon_destructive__hint_button_right_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 258; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 259; @position = 18; @symbol_constdef = [filename,259,18,26]; @symbol_type<0> = [String,259,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__hint_button_right_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 260; @position = 18; @symbol_constdef = [dithering,260,18,27]; @symbol_type<0> = [String,260,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 263; @symbol_moduledef = [system_color_light__background,263,15,45]; ]
+        module system_color_light__background {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 263; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 264; @position = 18; @symbol_constdef = [color,264,18,23]; @symbol_type<0> = [Number,264,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 265; @position = 18; @symbol_constdef = [background,265,18,28]; @symbol_type<0> = [Number,265,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 268; @symbol_moduledef = [system_icon_destructive__hint_button_right_top,268,15,61]; ]
+        module system_icon_destructive__hint_button_right_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 268; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 269; @position = 18; @symbol_constdef = [filename,269,18,26]; @symbol_type<0> = [String,269,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 270; @position = 18; @symbol_constdef = [dithering,270,18,27]; @symbol_type<0> = [String,270,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 273; @symbol_moduledef = [confirmation_loc__hint_confirm,273,15,45]; ]
+        module confirmation_loc__hint_confirm {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 273; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 274; @position = 18; @symbol_constdef = [x,274,18,19]; @symbol_type<0> = [Number,274,23,29]; ]
+            const x as Number = 323;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 275; @position = 18; @symbol_constdef = [y,275,18,19]; @symbol_type<0> = [Number,275,23,29]; ]
+            const y as Number = 75;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 278; @symbol_moduledef = [activity_color_dark__text,278,15,40]; ]
+        module activity_color_dark__text {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 278; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 280 18 ]
+                symbol [ Graphics %tmp.94 280 31 39 ];
+                %tmp.94 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.95 280 40 57 ];
+                %tmp.95 = getv %tmp.94 :COLOR_TRANSPARENT;
+                putv self :background %tmp.95;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 279; @position = 18; @symbol_constdef = [color,279,18,23]; @symbol_type<0> = [Number,279,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 280; @position = 18; @symbol_constdef = [background,280,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 283; @symbol_moduledef = [confirmation_input__keep,283,15,39]; ]
+        module confirmation_input__keep {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 283; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 284 18 ]
+                symbol [ WatchUi %tmp.96 284 27 34 ];
+                %tmp.96 = getm $.Toybox.WatchUi;
+                symbol [ KEY_ESC %tmp.97 284 35 42 ];
+                %tmp.97 = getv %tmp.96 :KEY_ESC;
+                putv self :button %tmp.97;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 284; @position = 18; @symbol_constdef = [button,284,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 287; @symbol_moduledef = [prompt_loc__body_with_title,287,15,42]; ]
+        module prompt_loc__body_with_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 287; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 288; @position = 18; @symbol_constdef = [x,288,18,19]; @symbol_type<0> = [Number,288,23,29]; ]
+            const x as Number = 65;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 289; @position = 18; @symbol_constdef = [y,289,18,19]; @symbol_type<0> = [Number,289,23,29]; ]
+            const y as Number = 133;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 292; @symbol_moduledef = [system_icon_dark__search,292,15,39]; ]
+        module system_icon_dark__search {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 292; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 293; @position = 18; @symbol_constdef = [filename,293,18,26]; @symbol_type<0> = [String,293,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__search.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 294; @position = 18; @symbol_constdef = [compress,294,18,26]; @symbol_type<0> = [String,294,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 295; @position = 18; @symbol_constdef = [dithering,295,18,27]; @symbol_type<0> = [String,295,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 296; @position = 18; @symbol_constdef = [automaticPalette,296,18,34]; @symbol_type<0> = [String,296,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 299; @symbol_moduledef = [activity_color_light__text,299,15,41]; ]
+        module activity_color_light__text {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 299; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 301 18 ]
+                symbol [ Graphics %tmp.98 301 31 39 ];
+                %tmp.98 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.99 301 40 57 ];
+                %tmp.99 = getv %tmp.98 :COLOR_TRANSPARENT;
+                putv self :background %tmp.99;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 300; @position = 18; @symbol_constdef = [color,300,18,23]; @symbol_type<0> = [Number,300,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 301; @position = 18; @symbol_constdef = [background,301,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 304; @symbol_moduledef = [confirmation_icon__hint_keep,304,15,43]; ]
+        module confirmation_icon__hint_keep {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 304; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 305; @position = 18; @symbol_constdef = [filename,305,18,26]; @symbol_type<0> = [String,305,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 306; @position = 18; @symbol_constdef = [dithering,306,18,27]; @symbol_type<0> = [String,306,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 309; @symbol_moduledef = [system_icon_dark__save,309,15,37]; ]
+        module system_icon_dark__save {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 309; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 310; @position = 18; @symbol_constdef = [filename,310,18,26]; @symbol_type<0> = [String,310,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__save.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 311; @position = 18; @symbol_constdef = [compress,311,18,26]; @symbol_type<0> = [String,311,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 312; @position = 18; @symbol_constdef = [dithering,312,18,27]; @symbol_type<0> = [String,312,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 313; @position = 18; @symbol_constdef = [automaticPalette,313,18,34]; @symbol_type<0> = [String,313,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 316; @symbol_moduledef = [system_icon_destructive__hint_button_left_middle,316,15,63]; ]
+        module system_icon_destructive__hint_button_left_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 316; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 317; @position = 18; @symbol_constdef = [filename,317,18,26]; @symbol_type<0> = [String,317,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__hint_button_left_middle.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 318; @position = 18; @symbol_constdef = [dithering,318,18,27]; @symbol_type<0> = [String,318,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 321; @symbol_moduledef = [system_icon_light__search,321,15,40]; ]
+        module system_icon_light__search {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 321; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 322; @position = 18; @symbol_constdef = [filename,322,18,26]; @symbol_type<0> = [String,322,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__search.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 323; @position = 18; @symbol_constdef = [compress,323,18,26]; @symbol_type<0> = [String,323,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 324; @position = 18; @symbol_constdef = [dithering,324,18,27]; @symbol_type<0> = [String,324,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 325; @position = 18; @symbol_constdef = [automaticPalette,325,18,34]; @symbol_type<0> = [String,325,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 328; @symbol_moduledef = [system_icon_dark__hint_button_left_bottom,328,15,56]; ]
+        module system_icon_dark__hint_button_left_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 328; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 329; @position = 18; @symbol_constdef = [filename,329,18,26]; @symbol_type<0> = [String,329,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__hint_button_left_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 330; @position = 18; @symbol_constdef = [dithering,330,18,27]; @symbol_type<0> = [String,330,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 333; @symbol_moduledef = [system_icon_positive__hint_button_left_top,333,15,57]; ]
+        module system_icon_positive__hint_button_left_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 333; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 334; @position = 18; @symbol_constdef = [exclude,334,18,25]; @symbol_type<0> = [Boolean,334,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 337; @symbol_moduledef = [system_loc__hint_button_right_bottom,337,15,51]; ]
+        module system_loc__hint_button_right_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 337; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 338; @position = 18; @symbol_constdef = [x,338,18,19]; @symbol_type<0> = [Number,338,23,29]; ]
+            const x as Number = 318;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 339; @position = 18; @symbol_constdef = [y,339,18,19]; @symbol_type<0> = [Number,339,23,29]; ]
+            const y as Number = 241;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 342; @symbol_moduledef = [confirmation_icon_dark__hint_reject,342,15,50]; ]
+        module confirmation_icon_dark__hint_reject {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 342; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 343; @position = 18; @symbol_constdef = [filename,343,18,26]; @symbol_type<0> = [String,343,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 344; @position = 18; @symbol_constdef = [dithering,344,18,27]; @symbol_type<0> = [String,344,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 347; @symbol_moduledef = [confirmation_color_dark__body,347,15,44]; ]
+        module confirmation_color_dark__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 347; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 349 18 ]
+                symbol [ Graphics %tmp.100 349 31 39 ];
+                %tmp.100 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.101 349 40 57 ];
+                %tmp.101 = getv %tmp.100 :COLOR_TRANSPARENT;
+                putv self :background %tmp.101;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 348; @position = 18; @symbol_constdef = [color,348,18,23]; @symbol_type<0> = [Number,348,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 349; @position = 18; @symbol_constdef = [background,349,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 352; @symbol_moduledef = [confirmation_icon_light__hint_confirm,352,15,52]; ]
+        module confirmation_icon_light__hint_confirm {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 352; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 353; @position = 18; @symbol_constdef = [filename,353,18,26]; @symbol_type<0> = [String,353,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 354; @position = 18; @symbol_constdef = [dithering,354,18,27]; @symbol_type<0> = [String,354,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 357; @symbol_moduledef = [prompt_color_dark__title,357,15,39]; ]
+        module prompt_color_dark__title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 357; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 359 18 ]
+                symbol [ Graphics %tmp.102 359 31 39 ];
+                %tmp.102 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.103 359 40 57 ];
+                %tmp.103 = getv %tmp.102 :COLOR_TRANSPARENT;
+                putv self :background %tmp.103;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 358; @position = 18; @symbol_constdef = [color,358,18,23]; @symbol_type<0> = [Number,358,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 359; @position = 18; @symbol_constdef = [background,359,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 362; @symbol_moduledef = [system_icon_destructive__cancel,362,15,46]; ]
+        module system_icon_destructive__cancel {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 362; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 363; @position = 18; @symbol_constdef = [filename,363,18,26]; @symbol_type<0> = [String,363,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__cancel.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 364; @position = 18; @symbol_constdef = [dithering,364,18,27]; @symbol_type<0> = [String,364,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 367; @symbol_moduledef = [system_icon_light__hint_button_right_bottom,367,15,58]; ]
+        module system_icon_light__hint_button_right_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 367; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 368; @position = 18; @symbol_constdef = [filename,368,18,26]; @symbol_type<0> = [String,368,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__hint_button_right_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 369; @position = 18; @symbol_constdef = [dithering,369,18,27]; @symbol_type<0> = [String,369,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 372; @symbol_moduledef = [prompt_loc__title,372,15,32]; ]
+        module prompt_loc__title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 372; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 373; @position = 18; @symbol_constdef = [x,373,18,19]; @symbol_type<0> = [Number,373,23,29]; ]
+            const x as Number = 71;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 374; @position = 18; @symbol_constdef = [y,374,18,19]; @symbol_type<0> = [Number,374,23,29]; ]
+            const y as Number = 33;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 377; @symbol_moduledef = [confirmation_font_enhanced_readability__body,377,15,59]; ]
+        module confirmation_font_enhanced_readability__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 377; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 378; @position = 18; @symbol_constdef = [exclude,378,18,25]; @symbol_type<0> = [Boolean,378,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 381; @symbol_moduledef = [prompt_color_light__title,381,15,40]; ]
+        module prompt_color_light__title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 381; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 383 18 ]
+                symbol [ Graphics %tmp.104 383 31 39 ];
+                %tmp.104 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.105 383 40 57 ];
+                %tmp.105 = getv %tmp.104 :COLOR_TRANSPARENT;
+                putv self :background %tmp.105;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 382; @position = 18; @symbol_constdef = [color,382,18,23]; @symbol_type<0> = [Number,382,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 383; @position = 18; @symbol_constdef = [background,383,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 386; @symbol_moduledef = [system_icon_dark__hint_button_right_top,386,15,54]; ]
+        module system_icon_dark__hint_button_right_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 386; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 387; @position = 18; @symbol_constdef = [filename,387,18,26]; @symbol_type<0> = [String,387,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 388; @position = 18; @symbol_constdef = [dithering,388,18,27]; @symbol_type<0> = [String,388,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 391; @symbol_moduledef = [system_icon_dark__hint_button_left_middle,391,15,56]; ]
+        module system_icon_dark__hint_button_left_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 391; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 392; @position = 18; @symbol_constdef = [filename,392,18,26]; @symbol_type<0> = [String,392,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__hint_button_left_middle.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 393; @position = 18; @symbol_constdef = [dithering,393,18,27]; @symbol_type<0> = [String,393,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 396; @symbol_moduledef = [confirmation_icon_dark__hint_keep,396,15,48]; ]
+        module confirmation_icon_dark__hint_keep {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 396; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 397; @position = 18; @symbol_constdef = [filename,397,18,26]; @symbol_type<0> = [String,397,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_keep.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 398; @position = 18; @symbol_constdef = [dithering,398,18,27]; @symbol_type<0> = [String,398,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 401; @symbol_moduledef = [system_icon_light__cancel,401,15,40]; ]
+        module system_icon_light__cancel {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 401; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 402; @position = 18; @symbol_constdef = [filename,402,18,26]; @symbol_type<0> = [String,402,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__cancel.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 403; @position = 18; @symbol_constdef = [compress,403,18,26]; @symbol_type<0> = [String,403,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 404; @position = 18; @symbol_constdef = [dithering,404,18,27]; @symbol_type<0> = [String,404,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 405; @position = 18; @symbol_constdef = [automaticPalette,405,18,34]; @symbol_type<0> = [String,405,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 408; @symbol_moduledef = [confirmation_icon_light__hint_reject,408,15,51]; ]
+        module confirmation_icon_light__hint_reject {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 408; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 409; @position = 18; @symbol_constdef = [filename,409,18,26]; @symbol_type<0> = [String,409,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 410; @position = 18; @symbol_constdef = [dithering,410,18,27]; @symbol_type<0> = [String,410,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 413; @symbol_moduledef = [system_icon_light__about,413,15,39]; ]
+        module system_icon_light__about {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 413; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 414; @position = 18; @symbol_constdef = [filename,414,18,26]; @symbol_type<0> = [String,414,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__about.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 415; @position = 18; @symbol_constdef = [compress,415,18,26]; @symbol_type<0> = [String,415,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 416; @position = 18; @symbol_constdef = [dithering,416,18,27]; @symbol_type<0> = [String,416,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 417; @position = 18; @symbol_constdef = [automaticPalette,417,18,34]; @symbol_type<0> = [String,417,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 420; @symbol_moduledef = [system_size__toast_icon,420,15,38]; ]
+        module system_size__toast_icon {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 420; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 421; @position = 18; @symbol_constdef = [scaleX,421,18,24]; @symbol_type<0> = [Number,421,28,34]; ]
+            const scaleX as Number = 49;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 422; @position = 18; @symbol_constdef = [scaleY,422,18,24]; @symbol_type<0> = [Number,422,28,34]; ]
+            const scaleY as Number = 49;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 423; @position = 18; @symbol_constdef = [scaleRelativeTo,423,18,33]; @symbol_type<0> = [String,423,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 426; @symbol_moduledef = [system_icon_dark__hint_button_right_middle,426,15,57]; ]
+        module system_icon_dark__hint_button_right_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 426; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 427; @position = 18; @symbol_constdef = [exclude,427,18,25]; @symbol_type<0> = [Boolean,427,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 430; @symbol_moduledef = [confirmation_icon__hint_reject,430,15,45]; ]
+        module confirmation_icon__hint_reject {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 430; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 431; @position = 18; @symbol_constdef = [filename,431,18,26]; @symbol_type<0> = [String,431,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_reject.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 432; @position = 18; @symbol_constdef = [dithering,432,18,27]; @symbol_type<0> = [String,432,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 435; @symbol_moduledef = [system_icon_light__hint_action_menu,435,15,50]; ]
+        module system_icon_light__hint_action_menu {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 435; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 436; @position = 18; @symbol_constdef = [filename,436,18,26]; @symbol_type<0> = [String,436,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 437; @position = 18; @symbol_constdef = [dithering,437,18,27]; @symbol_type<0> = [String,437,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 440; @symbol_moduledef = [system_icon_light__hint_button_right_middle,440,15,58]; ]
+        module system_icon_light__hint_button_right_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 440; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 441; @position = 18; @symbol_constdef = [exclude,441,18,25]; @symbol_type<0> = [Boolean,441,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 444; @symbol_moduledef = [system_icon_destructive__hint_button_right_middle,444,15,64]; ]
+        module system_icon_destructive__hint_button_right_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 444; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 445; @position = 18; @symbol_constdef = [exclude,445,18,25]; @symbol_type<0> = [Boolean,445,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 448; @symbol_moduledef = [confirmation_loc__hint_reject,448,15,44]; ]
+        module confirmation_loc__hint_reject {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 448; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 449; @position = 18; @symbol_constdef = [x,449,18,19]; @symbol_type<0> = [Number,449,23,29]; ]
+            const x as Number = 13;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 450; @position = 18; @symbol_constdef = [y,450,18,19]; @symbol_type<0> = [Number,450,23,29]; ]
+            const y as Number = 246;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 453; @symbol_moduledef = [confirmation_icon_dark__hint_delete,453,15,50]; ]
+        module confirmation_icon_dark__hint_delete {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 453; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 454; @position = 18; @symbol_constdef = [filename,454,18,26]; @symbol_type<0> = [String,454,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 455; @position = 18; @symbol_constdef = [dithering,455,18,27]; @symbol_type<0> = [String,455,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 458; @symbol_moduledef = [activity_color_dark__background,458,15,46]; ]
+        module activity_color_dark__background {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 458; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 459; @position = 18; @symbol_constdef = [color,459,18,23]; @symbol_type<0> = [Number,459,27,33]; ]
+            const color as Number = 0x000000;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 460; @position = 18; @symbol_constdef = [background,460,18,28]; @symbol_type<0> = [Number,460,32,38]; ]
+            const background as Number = 0x000000;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 463; @symbol_moduledef = [system_icon_light__hint_button_left_bottom,463,15,57]; ]
+        module system_icon_light__hint_button_left_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 463; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 464; @position = 18; @symbol_constdef = [filename,464,18,26]; @symbol_type<0> = [String,464,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__hint_button_left_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 465; @position = 18; @symbol_constdef = [dithering,465,18,27]; @symbol_type<0> = [String,465,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 468; @symbol_moduledef = [system_icon_positive__hint_button_left_middle,468,15,60]; ]
+        module system_icon_positive__hint_button_left_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 468; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 469; @position = 18; @symbol_constdef = [filename,469,18,26]; @symbol_type<0> = [String,469,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_positive__hint_button_left_middle.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 470; @position = 18; @symbol_constdef = [dithering,470,18,27]; @symbol_type<0> = [String,470,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 473; @symbol_moduledef = [system_size__menu_icon,473,15,37]; ]
+        module system_size__menu_icon {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 473; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 474; @position = 18; @symbol_constdef = [scaleX,474,18,24]; @symbol_type<0> = [Number,474,28,34]; ]
+            const scaleX as Number = 65;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 475; @position = 18; @symbol_constdef = [scaleY,475,18,24]; @symbol_type<0> = [Number,475,28,34]; ]
+            const scaleY as Number = 91;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 476; @position = 18; @symbol_constdef = [scaleRelativeTo,476,18,33]; @symbol_type<0> = [String,476,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 479; @symbol_moduledef = [system_icon_destructive__warning,479,15,47]; ]
+        module system_icon_destructive__warning {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 479; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 480; @position = 18; @symbol_constdef = [filename,480,18,26]; @symbol_type<0> = [String,480,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_destructive__warning.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 481; @position = 18; @symbol_constdef = [dithering,481,18,27]; @symbol_type<0> = [String,481,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 484; @symbol_moduledef = [system_loc__hint_button_right_middle,484,15,51]; ]
+        module system_loc__hint_button_right_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 484; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 485; @position = 18; @symbol_constdef = [exclude,485,18,25]; @symbol_type<0> = [Boolean,485,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 488; @symbol_moduledef = [system_icon_dark__cancel,488,15,39]; ]
+        module system_icon_dark__cancel {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 488; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 489; @position = 18; @symbol_constdef = [filename,489,18,26]; @symbol_type<0> = [String,489,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__cancel.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 490; @position = 18; @symbol_constdef = [compress,490,18,26]; @symbol_type<0> = [String,490,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 491; @position = 18; @symbol_constdef = [dithering,491,18,27]; @symbol_type<0> = [String,491,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 492; @position = 18; @symbol_constdef = [automaticPalette,492,18,34]; @symbol_type<0> = [String,492,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 495; @symbol_moduledef = [prompt_size__body_with_title,495,15,43]; ]
+        module prompt_size__body_with_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 495; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 496; @position = 18; @symbol_constdef = [width,496,18,23]; @symbol_type<0> = [Number,496,27,33]; ]
+            const width as Number = 260;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 497; @position = 18; @symbol_constdef = [height,497,18,24]; @symbol_type<0> = [Number,497,28,34]; ]
+            const height as Number = 214;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 500; @symbol_moduledef = [system_loc__hint_button_right_top,500,15,48]; ]
+        module system_loc__hint_button_right_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 500; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 501; @position = 18; @symbol_constdef = [x,501,18,19]; @symbol_type<0> = [Number,501,23,29]; ]
+            const x as Number = 323;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 502; @position = 18; @symbol_constdef = [y,502,18,19]; @symbol_type<0> = [Number,502,23,29]; ]
+            const y as Number = 73;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 505; @symbol_moduledef = [system_color_light__text,505,15,39]; ]
+        module system_color_light__text {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 505; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 507 18 ]
+                symbol [ Graphics %tmp.106 507 31 39 ];
+                %tmp.106 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.107 507 40 57 ];
+                %tmp.107 = getv %tmp.106 :COLOR_TRANSPARENT;
+                putv self :background %tmp.107;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 506; @position = 18; @symbol_constdef = [color,506,18,23]; @symbol_type<0> = [Number,506,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 507; @position = 18; @symbol_constdef = [background,507,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 510; @symbol_moduledef = [system_icon_light__check,510,15,39]; ]
+        module system_icon_light__check {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 510; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 511; @position = 18; @symbol_constdef = [filename,511,18,26]; @symbol_type<0> = [String,511,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__check.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 512; @position = 18; @symbol_constdef = [compress,512,18,26]; @symbol_type<0> = [String,512,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 513; @position = 18; @symbol_constdef = [dithering,513,18,27]; @symbol_type<0> = [String,513,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 514; @position = 18; @symbol_constdef = [automaticPalette,514,18,34]; @symbol_type<0> = [String,514,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 517; @symbol_moduledef = [confirmation_input__reject,517,15,41]; ]
+        module confirmation_input__reject {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 517; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 518 18 ]
+                symbol [ WatchUi %tmp.108 518 27 34 ];
+                %tmp.108 = getm $.Toybox.WatchUi;
+                symbol [ KEY_DOWN %tmp.109 518 35 43 ];
+                %tmp.109 = getv %tmp.108 :KEY_DOWN;
+                putv self :button %tmp.109;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 518; @position = 18; @symbol_constdef = [button,518,18,24]; ]
+            const button;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 521; @symbol_moduledef = [system_icon_light__revert,521,15,40]; ]
+        module system_icon_light__revert {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 521; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 522; @position = 18; @symbol_constdef = [filename,522,18,26]; @symbol_type<0> = [String,522,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__revert.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 523; @position = 18; @symbol_constdef = [compress,523,18,26]; @symbol_type<0> = [String,523,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 524; @position = 18; @symbol_constdef = [dithering,524,18,27]; @symbol_type<0> = [String,524,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 525; @position = 18; @symbol_constdef = [automaticPalette,525,18,34]; @symbol_type<0> = [String,525,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 528; @symbol_moduledef = [system_size__subwindow,528,15,37]; ]
+        module system_size__subwindow {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 528; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 529; @position = 18; @symbol_constdef = [exclude,529,18,25]; @symbol_type<0> = [Boolean,529,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 532; @symbol_moduledef = [system_icon_positive__hint_button_left_bottom,532,15,60]; ]
+        module system_icon_positive__hint_button_left_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 532; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 533; @position = 18; @symbol_constdef = [filename,533,18,26]; @symbol_type<0> = [String,533,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_positive__hint_button_left_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 534; @position = 18; @symbol_constdef = [dithering,534,18,27]; @symbol_type<0> = [String,534,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 537; @symbol_moduledef = [system_icon_dark__check,537,15,38]; ]
+        module system_icon_dark__check {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 537; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 538; @position = 18; @symbol_constdef = [filename,538,18,26]; @symbol_type<0> = [String,538,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__check.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 539; @position = 18; @symbol_constdef = [compress,539,18,26]; @symbol_type<0> = [String,539,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 540; @position = 18; @symbol_constdef = [dithering,540,18,27]; @symbol_type<0> = [String,540,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 541; @position = 18; @symbol_constdef = [automaticPalette,541,18,34]; @symbol_type<0> = [String,541,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 544; @symbol_moduledef = [confirmation_loc__hint_keep,544,15,42]; ]
+        module confirmation_loc__hint_keep {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 544; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 545; @position = 18; @symbol_constdef = [x,545,18,19]; @symbol_type<0> = [Number,545,23,29]; ]
+            const x as Number = 13;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 546; @position = 18; @symbol_constdef = [y,546,18,19]; @symbol_type<0> = [Number,546,23,29]; ]
+            const y as Number = 246;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 549; @symbol_moduledef = [confirmation_loc__hint_delete,549,15,44]; ]
+        module confirmation_loc__hint_delete {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 549; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 550; @position = 18; @symbol_constdef = [x,550,18,19]; @symbol_type<0> = [Number,550,23,29]; ]
+            const x as Number = 323;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 551; @position = 18; @symbol_constdef = [y,551,18,19]; @symbol_type<0> = [Number,551,23,29]; ]
+            const y as Number = 75;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 554; @symbol_moduledef = [system_icon_positive__hint_action_menu,554,15,53]; ]
+        module system_icon_positive__hint_action_menu {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 554; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 555; @position = 18; @symbol_constdef = [filename,555,18,26]; @symbol_type<0> = [String,555,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_positive__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 556; @position = 18; @symbol_constdef = [dithering,556,18,27]; @symbol_type<0> = [String,556,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 559; @symbol_moduledef = [system_icon_positive__hint_button_right_middle,559,15,61]; ]
+        module system_icon_positive__hint_button_right_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 559; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 560; @position = 18; @symbol_constdef = [exclude,560,18,25]; @symbol_type<0> = [Boolean,560,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 563; @symbol_moduledef = [system_icon_light__hint_button_left_middle,563,15,57]; ]
+        module system_icon_light__hint_button_left_middle {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 563; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 564; @position = 18; @symbol_constdef = [filename,564,18,26]; @symbol_type<0> = [String,564,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__hint_button_left_middle.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 565; @position = 18; @symbol_constdef = [dithering,565,18,27]; @symbol_type<0> = [String,565,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 568; @symbol_moduledef = [system_icon_dark__hint_button_right_bottom,568,15,57]; ]
+        module system_icon_dark__hint_button_right_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 568; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 569; @position = 18; @symbol_constdef = [filename,569,18,26]; @symbol_type<0> = [String,569,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__hint_button_right_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 570; @position = 18; @symbol_constdef = [dithering,570,18,27]; @symbol_type<0> = [String,570,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 573; @symbol_moduledef = [system_icon_positive__hint_button_right_bottom,573,15,61]; ]
+        module system_icon_positive__hint_button_right_bottom {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 573; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 574; @position = 18; @symbol_constdef = [filename,574,18,26]; @symbol_type<0> = [String,574,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_positive__hint_button_right_bottom.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 575; @position = 18; @symbol_constdef = [dithering,575,18,27]; @symbol_type<0> = [String,575,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 578; @symbol_moduledef = [system_icon_dark__revert,578,15,39]; ]
+        module system_icon_dark__revert {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 578; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 579; @position = 18; @symbol_constdef = [filename,579,18,26]; @symbol_type<0> = [String,579,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__revert.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 580; @position = 18; @symbol_constdef = [compress,580,18,26]; @symbol_type<0> = [String,580,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 581; @position = 18; @symbol_constdef = [dithering,581,18,27]; @symbol_type<0> = [String,581,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 582; @position = 18; @symbol_constdef = [automaticPalette,582,18,34]; @symbol_type<0> = [String,582,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 585; @symbol_moduledef = [confirmation_icon_light__hint_delete,585,15,51]; ]
+        module confirmation_icon_light__hint_delete {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 585; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 586; @position = 18; @symbol_constdef = [filename,586,18,26]; @symbol_type<0> = [String,586,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 587; @position = 18; @symbol_constdef = [dithering,587,18,27]; @symbol_type<0> = [String,587,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 590; @symbol_moduledef = [system_icon_dark__question,590,15,41]; ]
+        module system_icon_dark__question {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 590; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 591; @position = 18; @symbol_constdef = [filename,591,18,26]; @symbol_type<0> = [String,591,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__question.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 592; @position = 18; @symbol_constdef = [compress,592,18,26]; @symbol_type<0> = [String,592,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 593; @position = 18; @symbol_constdef = [dithering,593,18,27]; @symbol_type<0> = [String,593,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 594; @position = 18; @symbol_constdef = [automaticPalette,594,18,34]; @symbol_type<0> = [String,594,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 597; @symbol_moduledef = [system_icon_light__discard,597,15,41]; ]
+        module system_icon_light__discard {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 597; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 598; @position = 18; @symbol_constdef = [filename,598,18,26]; @symbol_type<0> = [String,598,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__discard.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 599; @position = 18; @symbol_constdef = [compress,599,18,26]; @symbol_type<0> = [String,599,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 600; @position = 18; @symbol_constdef = [dithering,600,18,27]; @symbol_type<0> = [String,600,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 601; @position = 18; @symbol_constdef = [automaticPalette,601,18,34]; @symbol_type<0> = [String,601,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 604; @symbol_moduledef = [device_info,604,15,26]; ]
+        module device_info {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 604; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 606 18 ]
+                symbol [ Toybox %tmp.111 606 32 38 ];
+                %tmp.111 = getv ? :Toybox;
+                symbol [ System %tmp.112 606 39 45 ];
+                %tmp.112 = getv %tmp.111 :System;
+                symbol [ SCREEN_SHAPE_ROUND %tmp.113 606 46 64 ];
+                %tmp.113 = getv %tmp.112 :SCREEN_SHAPE_ROUND;
+                putv self :screenShape %tmp.113;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 605; @position = 18; @symbol_constdef = [screenWidth,605,18,29]; @symbol_type<0> = [Number,605,33,39]; ]
+            const screenWidth as Number = 390;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 606; @position = 18; @symbol_constdef = [screenShape,606,18,29]; ]
+            const screenShape;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 607; @position = 18; @symbol_constdef = [hasNightMode,607,18,30]; @symbol_type<0> = [Boolean,607,34,41]; ]
+            const hasNightMode as Boolean = false;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 608; @position = 18; @symbol_constdef = [hasGpu,608,18,24]; @symbol_type<0> = [Boolean,608,28,35]; ]
+            const hasGpu as Boolean = false;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 609; @position = 18; @symbol_constdef = [screenHeight,609,18,30]; @symbol_type<0> = [Number,609,34,40]; ]
+            const screenHeight as Number = 390;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 610; @position = 18; @symbol_constdef = [hasTouchScreen,610,18,32]; @symbol_type<0> = [Boolean,610,36,43]; ]
+            const hasTouchScreen as Boolean = true;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 611; @position = 18; @symbol_constdef = [hasEnhancedReadabilityMode,611,18,44]; @symbol_type<0> = [Boolean,611,48,55]; ]
+            const hasEnhancedReadabilityMode as Boolean = false;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 614; @symbol_moduledef = [confirmation_icon_dark__hint_confirm,614,15,51]; ]
+        module confirmation_icon_dark__hint_confirm {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 614; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 615; @position = 18; @symbol_constdef = [filename,615,18,26]; @symbol_type<0> = [String,615,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_completion.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 616; @position = 18; @symbol_constdef = [dithering,616,18,27]; @symbol_type<0> = [String,616,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 619; @symbol_moduledef = [prompt_font__body_no_title,619,15,41]; ]
+        module prompt_font__body_no_title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 619; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 620 18 ]
+                symbol [ Graphics %tmp.114 620 34 42 ];
+                %tmp.114 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_CENTER %tmp.115 620 43 62 ];
+                %tmp.115 = getv %tmp.114 :TEXT_JUSTIFY_CENTER;
+                symbol [ Graphics %tmp.116 620 63 71 ];
+                %tmp.116 = getm $.Toybox.Graphics;
+                symbol [ TEXT_JUSTIFY_VCENTER %tmp.117 620 72 92 ];
+                %tmp.117 = getv %tmp.116 :TEXT_JUSTIFY_VCENTER;
+                %tmp.118 = bitor %tmp.115 %tmp.117;
+                putv self :justification %tmp.118;
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 621 18 ]
+                symbol [ Graphics %tmp.119 621 25 33 ];
+                %tmp.119 = getm $.Toybox.Graphics;
+                symbol [ FONT_XTINY %tmp.120 621 34 44 ];
+                %tmp.120 = getv %tmp.119 :FONT_XTINY;
+                putv self :font %tmp.120;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 620; @position = 18; @symbol_constdef = [justification,620,18,31]; ]
+            const justification;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 621; @position = 18; @symbol_constdef = [font,621,18,22]; ]
+            const font;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 624; @symbol_moduledef = [prompt_size__title_icon,624,15,38]; ]
+        module prompt_size__title_icon {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 624; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 625; @position = 18; @symbol_constdef = [scaleX,625,18,24]; @symbol_type<0> = [Float,625,28,33]; ]
+            const scaleX as Float = 0.13;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 626; @position = 18; @symbol_constdef = [scaleRelativeTo,626,18,33]; @symbol_type<0> = [String,626,37,43]; ]
+            const scaleRelativeTo as String = "screen";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 629; @symbol_moduledef = [system_icon_dark__warning,629,15,40]; ]
+        module system_icon_dark__warning {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 629; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 630; @position = 18; @symbol_constdef = [filename,630,18,26]; @symbol_type<0> = [String,630,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_dark__warning.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 631; @position = 18; @symbol_constdef = [compress,631,18,26]; @symbol_type<0> = [String,631,30,36]; ]
+            const compress as String = "true";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 632; @position = 18; @symbol_constdef = [dithering,632,18,27]; @symbol_type<0> = [String,632,31,37]; ]
+            const dithering as String = "none";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 633; @position = 18; @symbol_constdef = [automaticPalette,633,18,34]; @symbol_type<0> = [String,633,38,44]; ]
+            const automaticPalette as String = "true";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 636; @symbol_moduledef = [prompt_loc__title_icon,636,15,37]; ]
+        module prompt_loc__title_icon {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 636; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 637; @position = 18; @symbol_constdef = [x,637,18,19]; @symbol_type<0> = [Number,637,23,29]; ]
+            const x as Number = 195;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 638; @position = 18; @symbol_constdef = [y,638,18,19]; @symbol_type<0> = [Number,638,23,29]; ]
+            const y as Number = 32;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 639; @position = 18; @symbol_constdef = [horizontalJustification,639,18,41]; @symbol_type<0> = [String,639,45,51]; ]
+            const horizontalJustification as String = "center";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 640; @position = 18; @symbol_constdef = [verticalJustification,640,18,39]; @symbol_type<0> = [String,640,43,49]; ]
+            const verticalJustification as String = "center";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 643; @symbol_moduledef = [prompt_font_enhanced_readability__title,643,15,54]; ]
+        module prompt_font_enhanced_readability__title {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 643; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 644; @position = 18; @symbol_constdef = [exclude,644,18,25]; @symbol_type<0> = [Boolean,644,29,36]; ]
+            const exclude as Boolean = true;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 647; @symbol_moduledef = [prompt_color_dark__body,647,15,38]; ]
+        module prompt_color_dark__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 647; ]
+            <init> {
+[ "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen" 649 18 ]
+                symbol [ Graphics %tmp.121 649 31 39 ];
+                %tmp.121 = getm $.Toybox.Graphics;
+                symbol [ COLOR_TRANSPARENT %tmp.122 649 40 57 ];
+                %tmp.122 = getv %tmp.121 :COLOR_TRANSPARENT;
+                putv self :background %tmp.122;
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 648; @position = 18; @symbol_constdef = [color,648,18,23]; @symbol_type<0> = [Number,648,27,33]; ]
+            const color as Number = 0xFFFFFF;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 649; @position = 18; @symbol_constdef = [background,649,18,28]; ]
+            const background;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 652; @symbol_moduledef = [confirmation_icon__hint_delete,652,15,45]; ]
+        module confirmation_icon__hint_delete {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 652; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 653; @position = 18; @symbol_constdef = [filename,653,18,26]; @symbol_type<0> = [String,653,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\confirmation_icon__hint_delete.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 654; @position = 18; @symbol_constdef = [dithering,654,18,27]; @symbol_type<0> = [String,654,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 657; @symbol_moduledef = [system_icon_light__hint_button_right_top,657,15,55]; ]
+        module system_icon_light__hint_button_right_top {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 657; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 658; @position = 18; @symbol_constdef = [filename,658,18,26]; @symbol_type<0> = [String,658,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_light__hint_button_right_top.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 659; @position = 18; @symbol_constdef = [dithering,659,18,27]; @symbol_type<0> = [String,659,31,37]; ]
+            const dithering as String = "none";
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 662; @symbol_moduledef = [confirmation_size__body,662,15,38]; ]
+        module confirmation_size__body {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 662; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 663; @position = 18; @symbol_constdef = [width,663,18,23]; @symbol_type<0> = [Number,663,27,33]; ]
+            const width as Number = 268;
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 664; @position = 18; @symbol_constdef = [height,664,18,24]; @symbol_type<0> = [Number,664,28,34]; ]
+            const height as Number = 212;
+        }
+        [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 667; @symbol_moduledef = [system_icon_positive__check,667,15,42]; ]
+        module system_icon_positive__check {
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 667; ]
+            <init> {
+            }
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 668; @position = 18; @symbol_constdef = [filename,668,18,26]; @symbol_type<0> = [String,668,30,36]; ]
+            const filename as String = "C:\\Users\\User\\AppData\\Roaming\\Garmin\\ConnectIQ\\Devices\\fr165m\\system_icon_positive__check.svg";
+            [ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 669; @position = 18; @symbol_constdef = [dithering,669,18,27]; @symbol_type<0> = [String,669,31,37]; ]
+            const dithering as String = "none";
+        }
+    }
+}
+[ @file = "c:\dev\custom-watchface\bin\gen\006-B4433-00\source\Rez.mcgen"; @line = 1; ]
+<init> {
+}
